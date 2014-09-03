@@ -1,0 +1,139 @@
+Invalid keyboard code specified
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+OS OK. 
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+  tcc -c -1 -B -S -ml -w -Ic:\tc\include -I.\..\os\include start.c
+Turbo C  Version 2.0  Copyright (c) 1987, 1988 Borland International
+start.c:
+Warning start.c 162: Call to function 'strcpy' with no prototype in function get_item
+Warning start.c 178: Parameter 'option' is never used in function get_item
+Warning start.c 178: Parameter 'buf_len' is never used in function get_item
+Warning start.c 202: Call to function 'strcpy' with no prototype in function set_item
+Warning start.c 218: Parameter 'option' is never used in function set_item
+Warning start.c 218: Parameter 'key' is never used in function set_item
+Warning start.c 218: Parameter 'buf_len' is never used in function set_item
+Warning start.c 223: Parameter 'option' is never used in function is_writable
+Warning start.c 223: Parameter 'field_id' is never used in function is_writable
+Warning start.c 223: Parameter 'index' is never used in function is_writable
+Warning start.c 235: Parameter 'option' is never used in function show_status
+Warning start.c 235: Parameter 'color' is never used in function show_status
+Warning start.c 254: Parameter 'option' is never used in function notifier
+Warning start.c 254: Parameter 'prev_index' is never used in function notifier
+Warning start.c 319: Call to function 'strcpy' with no prototype in function dialog_prepare
+Warning start.c 341: Parameter 'opt' is never used in function dialog_prepare
+Warning start.c 341: Parameter 'data' is never used in function dialog_prepare
+Warning start.c 385: Call to function 'strcpy' with no prototype in function dialog_finish
+Warning start.c 390: Call to function 'toupper' with no prototype in function dialog_finish
+Warning start.c 402: Call to function 'strcpy' with no prototype in function dialog_finish
+Warning start.c 409: Parameter 'key' is never used in function dialog_finish
+Warning start.c 409: Parameter 'data' is never used in function dialog_finish
+Warning start.c 439: Call to function 'stricmp' with no prototype in function get_picture
+Warning start.c 441: Call to function 'stricmp' with no prototype in function get_picture
+Warning start.c 443: Call to function 'stricmp' with no prototype in function get_picture
+Warning start.c 445: Call to function 'stricmp' with no prototype in function get_picture
+Warning start.c 447: Call to function 'stricmp' with no prototype in function get_picture
+Warning start.c 478: 'i' is assigned a value which is never used in function refresh_pics
+Warning start.c 478: Parameter 'data' is never used in function refresh_pics
+Warning start.c 575: Constant is long in function refresh_task
+Warning start.c 588: Unreachable code in function refresh_task
+Warning start.c 603: 'test_keys' is assigned a value which is never used in function refresh_task
+Warning start.c 605: Unreachable code in function refresh_task
+Warning start.c 635: 'flag' is assigned a value which is never used in function refresh_task
+Turbo Assembler  Version 1.0  Copyright (c) 1988 by Borland International
+
+Assembling file:   START.ASM
+Error messages:    None
+Warning messages:  None
+Remaining memory:  156k
+
+
+        Available memory 149498
+
+  del  __tmp1.lib
+  tlib __tmp1.lib +start.obj
+
+  del  demo.lib
+  tlib demo.lib +__tmp1.lib
+  copy demo.lib ..
+        1 file(s) copied
+
+Microsoft (R) Program Maintenance Utility  Version 4.07
+Copyright (C) Microsoft Corp 1984-1988.  All rights reserved.
+
+
+  tlink /3 c:\tc\lib\c0l.obj,demo.exe,,c:\tc\lib\cxc.lib+os.lib+demo.lib;
+Turbo Link  Version 2.0  Copyright (c) 1987, 1988 Borland International
+  copy demo.exe ..
+        1 file(s) copied
+ALL OK. 

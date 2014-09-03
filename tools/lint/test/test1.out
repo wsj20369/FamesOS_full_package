@@ -1,0 +1,21 @@
+
+--- Module:   module1.cpp 
+
+    --- Wrap-up for Module: module1.cpp
+
+Info 753: local class X (line 7, file module1.cpp) not referenced
+
+--- Module:   module2.c 
+    _
+    {
+module2.c  3  Error 15: alpha(int) redeclared (Arg. no. 1: signed/unsigned,precision)
+    (line 4, file module1.cpp)
+module2.c  3  Warning 516: alpha(unsigned long) has arg. type conflict (arg.
+    no. 1 -- unsigned long vs. int) with line 4, file module1.cpp
+                             _
+    return (unsigned) l >> 16;
+module2.c  4  Warning 572: Excessive shift value
+
+--- Global Wrap-up
+
+Info 1714: Member function X::f(int) (line 9, file module1.cpp) not referenced

@@ -1,0 +1,7 @@
+---- gui_set_widget_dirty Matches (6 in 3 files) ----
+Widget.c (os\gui\widget):163: * º¯Êý:    gui_set_widget_dirty()
+Widget.c (os\gui\widget):171:BOOL guical gui_set_widget_dirty(gui_widget * c, RECT * dirty_rect)
+Widget.c (os\gui\widget):190:        if(!gui_set_widget_dirty(t, dirty_rect)){;}
+Widget.h (os\include\gui):106:BOOL guical gui_set_widget_dirty(gui_widget * c, RECT * dirty_rect);
+Window.c (os\gui):272:            gui_set_widget_dirty(t->root_widget, NULL);
+Window.c (os\gui):340:        gui_set_widget_dirty(t->root_widget, dirty_rect);

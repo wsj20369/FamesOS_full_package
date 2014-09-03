@@ -1,0 +1,147 @@
+Publics by module
+
+EPSON24 	size = 1518
+	_CheckPrinter                     _EPSON24Line
+	_EPSON24Post                      _EPSON24Pre
+	_HPPCLLine                        _HPPCLPost
+	_HPPCLPre                         _Translate8Byte
+
+ET      	size = 14123
+	_ASC000                           _ASC001
+	_ASC002                           _ASC003
+	_ASC004                           _ASC005
+	_ASC006                           _ASC007
+	_ASC008                           _ASC009
+	_ASC010                           _ASC011
+	_ASC012                           _ASC013
+	_ASC014                           _ASC015
+	_ASC016                           _ASC017
+	_ASC018                           _ASC019
+	_ASC020                           _ASC021
+	_ASC022                           _ASC023
+	_ASC024                           _ASC025
+	_ASC026                           _ASC027
+	_ASC028                           _ASC029
+	_ASC030                           _ASC031
+	_ASC032                           _ASC033
+	_ASC034                           _ASC035
+	_ASC036                           _ASC037
+	_ASC038                           _ASC039
+	_ASC040                           _ASC041
+	_ASC042                           _ASC043
+	_ASC044                           _ASC045
+	_ASC046                           _ASC047
+	_ASC048                           _ASC049
+	_ASC050                           _ASC051
+	_ASC052                           _ASC053
+	_ASC054                           _ASC055
+	_ASC056                           _ASC057
+	_ASC058                           _ASC059
+	_ASC060                           _ASC061
+	_ASC062                           _ASC063
+	_ASC064                           _ASC065
+	_ASC066                           _ASC067
+	_ASC068                           _ASC069
+	_ASC070                           _ASC071
+	_ASC072                           _ASC073
+	_ASC074                           _ASC075
+	_ASC076                           _ASC077
+	_ASC078                           _ASC079
+	_ASC080                           _ASC081
+	_ASC082                           _ASC083
+	_ASC084                           _ASC085
+	_ASC086                           _ASC087
+	_ASC088                           _ASC089
+	_ASC090                           _ASC091
+	_ASC092                           _ASC093
+	_ASC094                           _ASC095
+	_ASC096                           _ASC097
+	_ASC098                           _ASC099
+	_ASC100                           _ASC101
+	_ASC102                           _ASC103
+	_ASC104                           _ASC105
+	_ASC106                           _ASC107
+	_ASC108                           _ASC109
+	_ASC110                           _ASC111
+	_ASC112                           _ASC113
+	_ASC114                           _ASC115
+	_ASC116                           _ASC117
+	_ASC118                           _ASC119
+	_ASC120                           _ASC121
+	_ASC122                           _ASCFONT15
+	_ASCFONT24                        _ASC_CODE
+	_Change_Big5_Ser                  _Change_Ser_Big5
+	_Close_16_Font                    _Close_24_Font
+	_ETexisted                        _KAI032
+	_KAI048                           _KAI049
+	_KAI050                           _KAI051
+	_KAI052                           _KAI053
+	_KAI054                           _KAI055
+	_KAI056                           _KAI057
+	_KAI_CODE                         _Open_16_Font
+	_Open_24_Font                     _Open_Fontfile
+	_SPCFONT15                        _SPCFONT24
+	_SPCFSUPP15                       _SPCFSUPP24
+	_STDFONT15                        _STDFONT24
+	_Search_Pattern                   _Show16ColorWord
+	_Show21ColorWord                  _Show256ColorWord
+	_Show_16_String                   _Show_21_String
+	_Show_21_Word                     _Show_24_String
+	_Show_A_Asc                       _Show_A_Gray
+	_Show_A_Word                      _Show_Color_String
+	_pattern                        
+
+PARA    	size = 352
+	_CloseParaPort                    _IsParaPortOk
+	_OpenParaPort                     _SendParaPort
+	_SetPortParameter               
+
+PCX     	size = 5125
+	_Chk_PCX                          _DecideOutput
+	_Mark16Pal                        _PCXBody
+	_PCXHead                          _PCXLine
+	_PutPCXLine                       _PutPCXPalette
+	_Set16Palette                     _Set256Palette
+	_Show_PCX                         _device
+	_file                             _nullFunc
+	_palette                          _picture
+	_scanline                       
+
+RS232B  	size = 6508
+	DIDEX                             IBUF
+	P0                                P1
+	PORT                              RSFLG
+	SIDEX                             WCOUNT
+	_PUTCRS                           _arschk
+	_arsclose                         _arsopen
+	_arsread                          _arswrite
+
+UNIT    	size = 2853
+	_ChkDispMode                      _ChkMeasureMode
+	_FloatToString                    _InUnitFileString
+	_IntFloatToString                 _IntToString
+	_LongToString                     _Space
+	_StartTimeString                  _StringTimeSec
+	_SystemDate                       _Trim
+	_ValueTimeString                  _inFile
+	_textClose                        _textNextLine
+	_textNextToken                    _textOpen
+	_textRewind                     
+
+VGA     	size = 3333
+	_Arrange                          _C_BLACK
+	_C_BLUE                           _C_GOLDEN
+	_C_GRAY31                         _C_GRAYSUM
+	_C_GREEN                          _C_LIGHTBLUE
+	_C_LIGHTGRAY                      _C_LIGHTRED
+	_C_RED                            _C_WHITE
+	_C_YELLOW                         _Change256Color
+	_ClearBoxArea                     _CloseVGAMode
+	_DrawBox                          _DrawDownBox
+	_DrawLine                         _DrawPlane
+	_DrawPopUpBox                     _DrawPushDownBox
+	_DrawUpBox                        _Exchange
+	_GetPageAddress                   _HideCursor
+	_PutDot                           _SetVGAMode
+	_cB                               _cG
+	_cR                               _display

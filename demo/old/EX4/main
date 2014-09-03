@@ -1,0 +1,109 @@
+APP_OBJ     = Appmain+c:\lib\c\c0l.obj
+APP_LST     = Appmain.obj 
+STD_LIB     = c:\lib\c\cxc.lib
+COMPILER    = tcc -c -1 -B -S -ml -w -Ic:\tc\include
+LINKER      = tlink /x
+HEADFILE    = Apptask.h All.h Datatype.h Event.h FamesOS.h Includes.h Task.h Version.h timer.h mutex.h rs232.h tool.h pci.h nic.h Rtl8139j.h Rtl8139.h E100.h Error.h Log.h Key.h Irq.h hardware.h
+
+FamesOSLIB  = FamesOS.LIB
+FamesOSLIST = FamesOS.obj Task.Obj Event.Obj Irq.Obj
+FamesOSFILE = +FamesOS.obj +Task.Obj +Event.Obj + Irq.Obj
+
+NIC_LIB     = FamesNIC.LIB
+NIC_LIST    = Nic.obj Rtl8139j.obj Rtl8139.obj E100.obj
+NIC_FILE    = +Nic.obj +Rtl8139j.obj +Rtl8139.obj +E100.obj
+
+TOOL_LIB    = Tool.Lib
+TOOL_LIST   = Tool.Obj Error.Obj Log.Obj
+TOOL_FILE   = +Tool.Obj +Error.Obj +Log.Obj
+
+UI_LIB      = UI.LIB
+UI_LIST     = Key.Obj
+UI_FILE     = +Key.Obj
+
+MISC_LIB    = MISC.LIB
+MISC_LIST   = Apptask.obj  Timer.obj Mutex.obj Rs232.obj Pci.obj
+MISC_FILE   = +Apptask.obj +Timer.obj +Mutex.obj +Rs232.obj +Pci.obj
+
+
+FamesLIB    = $(FamesOSLIB)+$(NIC_LIB)+$(TOOL_LIB)+$(UI_LIB)+$(MISC_LIB)
+
+EXE_FILE    = appmain.exe
+	
+Appmain.obj: Appmain.c $(HEADFILE)
+	$(COMPILER) Appmain.c
+
+Apptask.obj: Apptask.c $(HEADFILE)
+	$(COMPILER) Apptask.c
+
+Timer.obj: Timer.c $(HEADFILE)
+	$(COMPILER) Timer.c
+
+FamesOS.obj: FamesOS.c $(HEADFILE)
+	$(COMPILER) FamesOS.c
+
+Task.obj: Task.c $(HEADFILE)
+	$(COMPILER) Task.c
+
+Irq.obj: Irq.c $(HEADFILE)
+	$(COMPILER) Irq.c
+
+Event.obj: Event.c $(HEADFILE)
+	$(COMPILER) Event.c
+
+Mutex.obj: Mutex.c $(HEADFILE)
+	$(COMPILER) Mutex.c
+
+Rs232.obj: Rs232.c $(HEADFILE)
+	$(COMPILER) Rs232.c
+
+Tool.obj: Tool.c $(HEADFILE)
+	$(COMPILER) Tool.c
+
+Error.obj: Error.c $(HEADFILE)
+	$(COMPILER) Error.c
+
+Log.obj: Log.c $(HEADFILE)
+	$(COMPILER) Log.c
+
+Pci.obj: Pci.c $(HEADFILE)
+	$(COMPILER) Pci.c
+
+Nic.obj: Nic.c $(HEADFILE)
+	$(COMPILER) Nic.c
+
+Rtl8139j.obj: Rtl8139j.c $(HEADFILE)
+	$(COMPILER) Rtl8139j.c
+
+Rtl8139.obj: Rtl8139.c $(HEADFILE)
+	$(COMPILER) Rtl8139.c
+
+E100.obj: E100.c $(HEADFILE)
+	$(COMPILER) E100.c
+
+Key.obj: Key.c $(HEADFILE)
+	$(COMPILER) Key.c
+
+$(FamesOSLIB):  $(FamesOSLIST)
+	del  $(FamesOSLIB)
+	tlib $(FamesOSLIB) $(FamesOSFILE)
+
+$(NIC_LIB):  $(NIC_LIST)
+	del  $(NIC_LIB)
+	tlib $(NIC_LIB) $(NIC_FILE)
+
+$(TOOL_LIB):  $(TOOL_LIST)
+	del  $(TOOL_LIB)
+	tlib $(TOOL_LIB) $(TOOL_FILE)
+
+$(UI_LIB):  $(UI_LIST)
+	del  $(UI_LIB)
+	tlib $(UI_LIB) $(UI_FILE)
+
+$(MISC_LIB):  $(MISC_LIST)
+	del  $(MISC_LIB)
+	tlib $(MISC_LIB) $(MISC_FILE)
+
+$(EXE_FILE): $(APP_LST) $(FamesOSLIB) $(NIC_LIB) $(TOOL_LIB) $(UI_LIB) $(MISC_LIB)
+	$(LINKER) $(APP_OBJ),,,$(STD_LIB)+$(FamesLIB);
+

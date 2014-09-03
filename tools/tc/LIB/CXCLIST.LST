@@ -1,0 +1,1759 @@
+Publics by module
+
+ABS     	size = 16
+	_abs                            
+
+ABSREAD 	size = 80
+	_absread                          _abswrite
+
+ACCESS  	size = 63
+	_access                         
+
+ACOSASIN	size = 338
+	_acos                             _asin
+
+ALLOCMEM	size = 39
+	_allocmem                       
+
+ATAN    	size = 13
+	_atan                           
+
+ATAN2   	size = 200
+	_atan2                          
+
+ATEXIT  	size = 177
+	__atexitcnt                       __atexittbl
+	_atexit                         
+
+ATOF    	size = 22
+	_atof                           
+
+ATOL    	size = 138
+	_atoi                             _atol
+
+B4BLOCK 	size = 2069
+	_b4alloc                          _b4append
+	_b4append2                        _b4flush
+	_b4free                           _b4go_eof
+	_b4insert                         _b4key
+	_b4key_key                        _b4lastpos
+	_b4leaf                           _b4recno
+	_b4remove                         _b4room
+	_b4seek                           _b4skip
+
+BDOS    	size = 22
+	_bdos                           
+
+BDOSPTR 	size = 35
+	_bdosptr                        
+
+BGIOVR  	size = 6480
+	__GRP_ovr                       
+
+BIOSCOM 	size = 16
+	_bioscom                        
+
+BIOSDISK	size = 57
+	_biosdisk                       
+
+BIOSEQU 	size = 30
+	_biosequip                        _biosmemory
+	_biostime                       
+
+BIOSKEY 	size = 58
+	_bioskey                        
+
+BIOSPRIN	size = 22
+	_biosprint                      
+
+BRK     	size = 40
+	_brk                              _sbrk
+
+BSEARCH 	size = 124
+	_bsearch                        
+
+C4      	size = 1984
+	_c4atod                           _c4atoi
+	_c4atol                           _c4calc_type
+	_c4clip                           _c4descend
+	_c4descend_date                   _c4descend_num
+	_c4descend_str                    _c4dtoa45
+	_c4dtoa_clipper                   _c4encode
+	_c4lower                          _c4ltoa45
+	_c4trim_n                         _c4upper
+
+C4BCD   	size = 0
+
+C4CODE  	size = 985
+	_d4close_all                      _d4data
+	_d4init                           _d4init_undo
+	_expr4buf                         _f4memo_null_char
+	_u4switch                       
+
+C4CONST 	size = 4952
+	_bitmap4redistribute              _bitmap4redistribute_branch
+	_bitmap4redistribute_leaf         _bitmap4seek
+	_const4add_ne                     _const4delete_ne
+	_const4duplicate                  _const4eq
+	_const4get                        _const4less
+	_const4less_eq                    _const4mem_alloc
+	_const4return                   
+
+CALLOC  	size = 108
+	_calloc                         
+
+CEIL    	size = 52
+	_ceil                           
+
+CGETS   	size = 38
+	_cgets                          
+
+CHDIR   	size = 53
+	_chdir                            _getdisk
+	_setdisk                        
+
+CHMOD   	size = 84
+	_chmod                          
+
+CHMODA  	size = 33
+	__chmod                         
+
+CHSIZE  	size = 204
+	_chsize                         
+
+CLEAR87 	size = 42
+	__clear87                       
+
+CLEARERR	size = 14
+	_clearerr                       
+
+CLOCK   	size = 57
+	_clock                          
+
+CLOSE   	size = 49
+	_close                          
+
+CLOSEA  	size = 38
+	__close                         
+
+CLOSEALL	size = 64
+	_fcloseall                      
+
+CLREOL  	size = 43
+	_clreol                         
+
+CLRSCR  	size = 45
+	_clrscr                         
+
+COLOR   	size = 76
+	_highvideo                        _lowvideo
+	_normvideo                        _textattr
+	_textbackground                   _textcolor
+
+CORELEFT	size = 8
+	_coreleft                       
+
+COS     	size = 93
+	_cos                            
+
+COSH    	size = 125
+	_cosh                           
+
+COUNTRY 	size = 33
+	_country                        
+
+CPRINTF 	size = 359
+	__CPUTN                           _cprintf
+
+CPUTS   	size = 36
+	_cputs                          
+
+CREAT   	size = 130
+	_creat                          
+
+CREATA  	size = 133
+	__creat                           _creatnew
+	_creattemp                      
+
+CRTINIT 	size = 318
+	__VideoInt                        __c0crtinit
+	__crtinit                         __turboCrt
+	__video                           _directvideo
+
+CSCANF  	size = 45
+	_cscanf                         
+
+CTIME   	size = 980
+	_asctime                          _ctime
+	_gmtime                           _localtime
+
+CTRL87  	size = 46
+	__control87                     
+
+CTRLBRK 	size = 77
+	_ctrlbrk                        
+
+CTYPE   	size = 257
+	__ctype                         
+
+CVTFAK  	size = 100
+	__cvtfak                        
+
+D4APPEND	size = 1087
+	_d4append                         _d4append_blank
+	_d4append_data                    _d4append_start
+
+D4CLOSE 	size = 569
+	_d4close                        
+
+D4CREATE	size = 1109
+	_d4create                       
+
+D4DATA  	size = 2072
+	_d4alias                          _d4alias_set
+	_d4blank                          _d4bof
+	_d4bottom                         _d4delete
+	_d4deleted                        _d4eof
+	_d4num_fields                     _d4read
+	_d4read_old                       _d4recall
+	_d4reccount                       _d4recno
+	_d4record                         _d4record_position
+	_d4record_width                   _d4top
+	_d4update_header                
+
+D4DATE  	size = 2920
+	_date4assign                      _date4cdow
+	_date4cmonth                      _date4day
+	_date4dow                         _date4format
+	_date4format_mdx                  _date4format_mdx2
+	_date4init                        _date4long
+	_date4month                       _date4time_now
+	_date4today                       _date4year
+
+D4FIELD 	size = 346
+	_d4field                          _d4field_j
+	_d4field_number                 
+
+D4FLUSH 	size = 630
+	_d4changed                        _d4flush
+	_d4flush_data                     _d4flush_files
+	_d4update                         _d4update_record
+
+D4FRESH 	size = 555
+	_d4refresh                        _d4refresh_record
+
+D4GO    	size = 798
+	_d4go                             _d4go_data
+	_d4go_eof                       
+
+D4INDEX 	size = 516
+	_d4free_blocks                    _d4index
+	_d4reindex                      
+
+D4LOCK  	size = 1899
+	_d4lock                           _d4lock_all
+	_d4lock_append                    _d4lock_file
+	_d4lock_group                     _d4lock_index
+	_d4lock_test                      _d4lock_test_append
+	_d4lock_test_file                 _d4lock_test_index
+
+D4OPEN  	size = 2021
+	_d4open                         
+
+D4OPT   	size = 2696
+	_d4opt_restart                    _d4opt_start
+	_d4opt_suspend                    _d4optimize
+	_d4optimize_write               
+
+D4PACK  	size = 1015
+	_d4pack                           _d4pack_data
+
+D4POSITI	size = 886
+	_d4position                       _d4position2
+	_d4position_set                 
+
+D4SEEK  	size = 1004
+	_d4seek                           _d4seek_double
+	_d4seek_n                       
+
+D4SKIP  	size = 1475
+	_d4skip                         
+
+D4TAG   	size = 847
+	_d4tag                            _d4tag_default
+	_d4tag_next                       _d4tag_prev
+	_d4tag_select                     _d4tag_selected
+
+D4UNLOCK	size = 697
+	_d4unlock                         _d4unlock_append
+	_d4unlock_data                    _d4unlock_file
+	_d4unlock_files                   _d4unlock_index
+	_d4unlock_records               
+
+D4WRITE 	size = 1338
+	_d4write                          _d4write_data
+	_d4write_keys                   
+
+D4ZAP   	size = 1197
+	_d4zap                            _d4zap_data
+
+DELAY   	size = 184
+	_delay                          
+
+DIFFTIME	size = 30
+	_difftime                       
+
+DIVT    	size = 12
+	_div                            
+
+DOSCMD  	size = 262
+	__DOSCMD                        
+
+DOSENV  	size = 345
+	__DOSENV                        
+
+DOSEXT  	size = 31
+	_dosexterr                      
+
+DOSTIMU 	size = 200
+	__DOSTIMETOU                    
+
+DUP2    	size = 124
+	_dup                              _dup2
+
+E4CALC  	size = 1460
+	_expr4calc_create                 _expr4calc_delete
+	_expr4calc_lookup                 _expr4calc_massage
+	_expr4calc_name_change            _expr4calc_reset
+	_expr4calc_result_pos           
+
+E4ERROR 	size = 199
+	_e4                               _e4code
+	_e4describe                       _e4exit
+	_e4exit_test                      _e4set
+	_e4severe                         _e4text
+
+E4EXPR  	size = 1471
+	_expr4                            _expr4compare_flip
+	_expr4constants                   _expr4double
+	_expr4execute                     _expr4free
+	_expr4info_ptr                    _expr4key
+	_expr4key_convert                 _expr4key_len
+	_expr4len                         _expr4ptr
+	_expr4source                      _expr4start
+	_expr4true                        _expr4type
+	_expr4vary                      
+
+E4FUNCTI	size = 7800
+	_e4add                            _e4add_date
+	_e4and                            _e4calc_function
+	_e4calc_total                     _e4concat_special
+	_e4concat_trim                    _e4concat_two
+	_e4contain                        _e4copy_constant
+	_e4copy_parm                      _e4ctod
+	_e4date                           _e4day
+	_e4day_doub                       _e4del
+	_e4deleted                        _e4descend_str
+	_e4divide                         _e4dtoc
+	_e4dtoc_doub                      _e4dtos_doub
+	_e4equal                          _e4false
+	_e4field_add                      _e4field_copy
+	_e4field_date_d                   _e4field_log
+	_e4field_num_d                    _e4greater
+	_e4greater_doub                   _e4greater_eq
+	_e4greater_eq_doub                _e4iif
+	_e4less                           _e4less_doub
+	_e4less_eq                        _e4less_eq_doub
+	_e4ltrim                          _e4month
+	_e4month_doub                     _e4multiply
+	_e4nop                            _e4not
+	_e4not_equal                      _e4or
+	_e4pageno                         _e4parm_remove
+	_e4power                          _e4reccount
+	_e4recno                          _e4stod
+	_e4str                            _e4sub
+	_e4sub_date                       _e4substr
+	_e4time                           _e4trim
+	_e4upper                          _e4val
+	_e4year                           _e4year_doub
+	_expr4functions                   _expr4true_function
+	_total4value                      _v4functions
+
+E4NOT_S 	size = 33
+	_d4memo_compress                
+
+E4PARSE 	size = 9723
+	_e4add_constant                   _e4function_add
+	_e4function_pop                   _e4get_operator
+	_e4lookup                         _expr4parse
+	_expr4parse_expr                  _expr4parse_function
+	_expr4parse_value                 _s4scan_char
+	_s4scan_init                      _s4scan_range
+	_s4scan_search                    _s4stack_cur
+	_s4stack_pop                      _s4stack_push_int
+	_s4stack_push_str               
+
+EFCVT   	size = 155
+	_ecvt                             _fcvt
+
+EMU086  	size = 9719
+	e086_Entry                        e086_Shortcut
+
+EMU087  	size = 1047
+	e087_Entry                        e087_Shortcut
+
+EMUINIT 	size = 418
+	FIARQQ                            FICRQQ
+	FIDRQQ                            FIERQQ
+	FISRQQ                            FIWRQQ
+	FJARQQ                            FJCRQQ
+	FJSRQQ                            __EMURESET
+
+EOF     	size = 112
+	_eof                            
+
+EPSON24 	size = 1518
+	_CheckPrinter                     _EPSON24Line
+	_EPSON24Post                      _EPSON24Pre
+	_HPPCLLine                        _HPPCLPost
+	_HPPCLPre                         _Translate8Byte
+
+ET      	size = 14123
+	_ASC000                           _ASC001
+	_ASC002                           _ASC003
+	_ASC004                           _ASC005
+	_ASC006                           _ASC007
+	_ASC008                           _ASC009
+	_ASC010                           _ASC011
+	_ASC012                           _ASC013
+	_ASC014                           _ASC015
+	_ASC016                           _ASC017
+	_ASC018                           _ASC019
+	_ASC020                           _ASC021
+	_ASC022                           _ASC023
+	_ASC024                           _ASC025
+	_ASC026                           _ASC027
+	_ASC028                           _ASC029
+	_ASC030                           _ASC031
+	_ASC032                           _ASC033
+	_ASC034                           _ASC035
+	_ASC036                           _ASC037
+	_ASC038                           _ASC039
+	_ASC040                           _ASC041
+	_ASC042                           _ASC043
+	_ASC044                           _ASC045
+	_ASC046                           _ASC047
+	_ASC048                           _ASC049
+	_ASC050                           _ASC051
+	_ASC052                           _ASC053
+	_ASC054                           _ASC055
+	_ASC056                           _ASC057
+	_ASC058                           _ASC059
+	_ASC060                           _ASC061
+	_ASC062                           _ASC063
+	_ASC064                           _ASC065
+	_ASC066                           _ASC067
+	_ASC068                           _ASC069
+	_ASC070                           _ASC071
+	_ASC072                           _ASC073
+	_ASC074                           _ASC075
+	_ASC076                           _ASC077
+	_ASC078                           _ASC079
+	_ASC080                           _ASC081
+	_ASC082                           _ASC083
+	_ASC084                           _ASC085
+	_ASC086                           _ASC087
+	_ASC088                           _ASC089
+	_ASC090                           _ASC091
+	_ASC092                           _ASC093
+	_ASC094                           _ASC095
+	_ASC096                           _ASC097
+	_ASC098                           _ASC099
+	_ASC100                           _ASC101
+	_ASC102                           _ASC103
+	_ASC104                           _ASC105
+	_ASC106                           _ASC107
+	_ASC108                           _ASC109
+	_ASC110                           _ASC111
+	_ASC112                           _ASC113
+	_ASC114                           _ASC115
+	_ASC116                           _ASC117
+	_ASC118                           _ASC119
+	_ASC120                           _ASC121
+	_ASC122                           _ASCFONT15
+	_ASCFONT24                        _ASC_CODE
+	_Change_Big5_Ser                  _Change_Ser_Big5
+	_Close_16_Font                    _Close_24_Font
+	_ETexisted                        _KAI032
+	_KAI048                           _KAI049
+	_KAI050                           _KAI051
+	_KAI052                           _KAI053
+	_KAI054                           _KAI055
+	_KAI056                           _KAI057
+	_KAI_CODE                         _Open_16_Font
+	_Open_24_Font                     _Open_Fontfile
+	_SPCFONT15                        _SPCFONT24
+	_SPCFSUPP15                       _SPCFSUPP24
+	_STDFONT15                        _STDFONT24
+	_Search_Pattern                   _Show16ColorWord
+	_Show21ColorWord                  _Show256ColorWord
+	_Show_16_String                   _Show_21_String
+	_Show_21_Word                     _Show_24_String
+	_Show_A_Asc                       _Show_A_Gray
+	_Show_A_Word                      _Show_Color_String
+	_pattern                        
+
+EXEC    	size = 830
+	__exec                          
+
+EXECL   	size = 40
+	_execl                          
+
+EXECLE  	size = 83
+	_execle                         
+
+EXECLP  	size = 41
+	_execlp                         
+
+EXECLPE 	size = 84
+	_execlpe                        
+
+EXECV   	size = 41
+	_execv                          
+
+EXECVE  	size = 43
+	_execve                         
+
+EXECVP  	size = 42
+	_execvp                         
+
+EXECVPE 	size = 44
+	_execvpe                        
+
+EXIT    	size = 64
+	__exitbuf                         __exitfopen
+	__exitopen                        _exit
+
+EXP     	size = 127
+	_exp                            
+
+F4ASS_F 	size = 362
+	_f4assign_field                 
+
+F4CHAR  	size = 93
+	_f4assign_char                    _f4char
+
+F4CLOSE 	size = 323
+	_file4close                     
+
+F4CREATE	size = 421
+	_file4create                    
+
+F4DOUBLE	size = 224
+	_f4assign_double                  _f4double
+	_f4double2                      
+
+F4FIELD 	size = 168
+	_f4assign_ptr                     _f4blank
+	_f4data                           _f4decimals
+	_f4len                            _f4name
+	_f4type                         
+
+F4FILE  	size = 1600
+	_file4len                         _file4len_set
+	_file4read                        _file4read_all
+	_file4read_error                  _file4replace
+
+F4FILESE	size = 1656
+	_file4seq_read                    _file4seq_read_all
+	_file4seq_read_init               _file4seq_write
+	_file4seq_write_flush             _file4seq_write_init
+	_file4seq_write_repeat          
+
+F4FLAG  	size = 1783
+	_f4flag_and                       _f4flag_flip_returns
+	_f4flag_init                      _f4flag_is_all_set
+	_f4flag_is_any_set                _f4flag_is_set
+	_f4flag_or                        _f4flag_reset
+	_f4flag_set                       _f4flag_set_all
+	_f4flag_set_range               
+
+F4FLUSH 	size = 459
+	_file4flush                       _file4low_flush
+	_file4refresh                   
+
+F4INFO  	size = 270
+	_d4field_info                   
+
+F4INT   	size = 165
+	_f4assign_int                     _f4int
+
+F4LOCK  	size = 346
+	_file4lock                        _file4unlock
+
+F4LONG  	size = 215
+	_f4assign_long                    _f4long
+
+F4MEMO  	size = 461
+	_f4memo_assign                    _f4memo_assign_n
+	_f4memo_free                      _f4memo_len
+	_f4memo_ncpy                      _f4memo_ptr
+	_f4memo_str                     
+
+F4OPEN  	size = 593
+	_file4open                        _file4open_test
+
+F4OPT   	size = 709
+	_file4optimize                    _file4optimize_write
+	_file4set_write_opt             
+
+F4PTR   	size = 29
+	_f4ptr                          
+
+F4STR   	size = 381
+	_f4assign                         _f4assign_n
+	_f4ncpy                           _f4str
+
+F4TEMP  	size = 730
+	_file4temp                      
+
+F4TRUE  	size = 64
+	_f4true                         
+
+F4WRITE 	size = 404
+	_file4write                     
+
+FABS    	size = 15
+	_fabs                           
+
+FBRK    	size = 340
+	__brk                             __sbrk
+
+FCALLOC 	size = 150
+	_farcalloc                      
+
+FCLOSE  	size = 208
+	_fclose                         
+
+FCORELFT	size = 29
+	_farcoreleft                    
+
+FFLUSH  	size = 232
+	_fflush                         
+
+FFREE   	size = 804
+	_farfree                          _free
+
+FGETPOS 	size = 47
+	_fgetpos                        
+
+FGETS   	size = 156
+	_fgets                          
+
+FILES   	size = 400
+	__streams                       
+
+FILES2  	size = 40
+	__openfd                        
+
+FINDFIRS	size = 70
+	_findfirst                        _findnext
+
+FLAGS87 	size = 2
+	FLAGS8087@                      
+
+FLENGTH 	size = 69
+	_filelength                     
+
+FLOOR   	size = 52
+	_floor                          
+
+FLUSHALL	size = 69
+	_flushall                       
+
+FMALLOC 	size = 796
+	__first                           __last
+	__pull_free_block                 __rover
+	_farmalloc                        _malloc
+
+FMOD    	size = 78
+	_fmod                           
+
+FMODE   	size = 4
+	__fmode                           __notUmask
+
+FNMERGE 	size = 195
+	_fnmerge                        
+
+FNSPLIT 	size = 688
+	_fnsplit                        
+
+FOPEN   	size = 715
+	_fdopen                           _fopen
+	_freopen                        
+
+FPERR   	size = 319
+	__fperr                         
+
+FPEXCEP 	size = 737
+	FPE1st                            FPElast
+	__FPExcep                       
+
+FPRESET 	size = 6
+	__fpreset                       
+
+FPRINTF 	size = 37
+	_fprintf                        
+
+FPUTS   	size = 62
+	_fputs                          
+
+FREAD   	size = 398
+	_fread                          
+
+FREALLOC	size = 171
+	_farrealloc                       _realloc
+
+FREE    	size = 0
+
+FREEMEM 	size = 26
+	_freemem                        
+
+FREXP   	size = 58
+	_frexp                          
+
+FSCANF  	size = 47
+	_fscanf                         
+
+FSEEK   	size = 333
+	_fseek                            _ftell
+
+FSETPOS 	size = 33
+	_fsetpos                        
+
+FSTAT   	size = 133
+	_fstat                          
+
+FTIME   	size = 206
+	_ftime                          
+
+FTOL    	size = 43
+	FTOL@                           
+
+FWRITE  	size = 138
+	_fwrite                         
+
+GCVT    	size = 40
+	_gcvt                           
+
+GETC    	size = 593
+	__fgetc                           _fgetc
+	_fgetchar                       
+
+GETCBRK 	size = 31
+	_getcbrk                          _setcbrk
+
+GETCH   	size = 96
+	_getch                            _getche
+	_ungetch                        
+
+GETCURDI	size = 33
+	_getcurdir                      
+
+GETCWD  	size = 150
+	_getcwd                         
+
+GETDATE 	size = 44
+	_getdate                          _gettime
+
+GETDTA  	size = 11
+	_getdta                         
+
+GETENV  	size = 115
+	_getenv                         
+
+GETFAT  	size = 112
+	_getdfree                         _getfat
+	_getfatd                        
+
+GETFTIME	size = 41
+	_getftime                       
+
+GETPASS 	size = 179
+	_getpass                        
+
+GETPSP  	size = 9
+	_getpsp                         
+
+GETS    	size = 140
+	_gets                           
+
+GETSWIT 	size = 25
+	_getswitchar                      _setswitchar
+
+GETVECT 	size = 35
+	_getvect                          _setvect
+
+GETVERF 	size = 24
+	_getverify                        _setverify
+
+GETW    	size = 124
+	_getw                           
+
+GEXIT   	size = 14
+	__graphexit                     
+
+GFREEMEM	size = 18
+	__graphfreemem                  
+
+GGETMEM 	size = 16
+	__graphgetmem                   
+
+GLOAD   	size = 6
+	__BGI_auto                        __BGI_ovr
+
+GOTOXY  	size = 91
+	_gotoxy                         
+
+GPTEXT  	size = 149
+	_gettext                          _puttext
+
+GRAPH   	size = 2597
+	__autodetect                      __gr_cleardevice
+	__gr_detectgraph                  __gr_getmodename
+	__gr_imagesize                    __gr_lineto
+	__gr_moveto                       __gr_putimage
+	__gr_restorecrtmode               __gr_setallpalette
+	__gr_setbkcolor                   __gr_setfillpattern
+	__gr_setfillstyle                 __gr_setgraphmode
+	__gr_setlinestyle                 __gr_setpalette
+	__gr_settextjustify               __gr_settextstyle
+	__gr_setusercharsize              __gr_setviewport
+	__gr_textheight                   __initdevice
+	__installdevice                   __reinstalldevice
+	_bar                              _bar3d
+	_drawpoly                         _ellipse
+	_fillellipse                      _fillpoly
+	_floodfill                        _getarccoords
+	_getdefaultpalette                _getimage
+	_getmaxcolor                      _getmaxmode
+	_getpalettesize                   _getpixel
+	_line                             _outtextxy
+	_postdevice                       _putpixel
+	_sector                           _setactivepage
+	_setcolor                         _setrgbpalette
+	_setvisualpage                    _setwritemode
+	_textwidth                      
+
+GRAPHC  	size = 7837
+	__BGI_ADD                         __DDO_ADD
+	__FON_ADD                         __GraphNotInstalled
+	__OverScanColor                   __StatOfs
+	__StatSeg                         ___move
+	__backcolor                       __drawcolor
+	__fillcolor                       __fillstyle
+	__gr_ErrCode                      __linestyle
+	_arc                              _circle
+	_cleardevice                      _clearviewport
+	_closegraph                       _detectgraph
+	_getaspectratio                   _getbkcolor
+	_getcolor                         _getdrivername
+	_getfillpattern                   _getfillsettings
+	_getgraphmode                     _getlinesettings
+	_getmaxx                          _getmaxy
+	_getmodename                      _getmoderange
+	_getpalette                       _gettextsettings
+	_getviewsettings                  _getx
+	_gety                             _graphdefaults
+	_grapherrormsg                    _graphresult
+	_imagesize                        _initgraph
+	_installuserdriver                _installuserfont
+	_linerel                          _lineto
+	_moverel                          _moveto
+	_outtext                          _pieslice
+	_putimage                         _rectangle
+	_registerfarbgidriver             _registerfarbgifont
+	_restorecrtmode                   _setallpalette
+	_setaspectratio                   _setbkcolor
+	_setfillpattern                   _setfillstyle
+	_setgraphbufsize                  _setgraphmode
+	_setlinestyle                     _setpalette
+	_settextjustify                   _settextstyle
+	_setusercharsize                  _setviewport
+	_textheight                     
+
+GREGISTR	size = 36
+	_registerbgidriver                _registerbgifont
+
+HARDERR 	size = 173
+	_harderr                          _hardresume
+	_hardretn                       
+
+HEAPLEN 	size = 0
+
+HUGEVAL 	size = 36
+	__huge_dble                       __huge_flt
+	__huge_ldble                      __indefinite
+	__tiny_ldble                    
+
+HYPOT   	size = 101
+	_hypot                          
+
+I4ADDTAG	size = 2010
+	_t4add                            _t4add_calc
+
+I4CHECK 	size = 3002
+	_d4check                          _i4check
+	_t4check                        
+
+I4CREATE	size = 2326
+	_i4create                         _t4create
+
+I4DUMP  	size = 0
+
+I4INDEX 	size = 2764
+	_i4close                          _i4flush
+	_i4is_production                  _i4open
+	_i4tag                            _i4update
+
+I4INFO  	size = 470
+	_i4tag_info                       _t4alias
+	_t4is_descending                  _t4unique
+
+I4INIT  	size = 585
+	_t4cmp_doub                       _t4date_doub_to_str
+	_t4init_seek_conv                 _t4no_change_double
+	_t4no_change_str                  _t4str_to_clip
+	_t4str_to_date_mdx                _t4str_to_doub
+
+I4KEY   	size = 97
+	_t4key                          
+
+I4LOCK  	size = 804
+	_i4lock                           _i4unlock
+
+I4NTAG  	size = 7647
+	_t4block                          _t4bottom
+	_t4close                          _t4descending
+	_t4do_version_check               _t4down
+	_t4eof                            _t4extend
+	_t4flush                          _t4free_all
+	_t4free_saved                     _t4go2
+	_t4key_data                       _t4open
+	_t4recno                          _t4rl_bottom
+	_t4rl_top                         _t4seek
+	_t4shrink                         _t4skip
+	_t4split                          _t4top
+	_t4type                           _t4up
+	_t4up_to_root                     _t4update
+	_t4update_header                  _t4version_check
+
+I4POSITI	size = 626
+	_t4position                       _t4position2
+	_t4positionDbl                    _t4position_set
+
+I4REMOVE	size = 6169
+	_t4balance                        _t4balance_branch
+	_t4get_replace_entry              _t4remove
+	_t4remove_calc                    _t4remove_current
+	_t4remove_ref                   
+
+I4TAG   	size = 755
+	_i4read_block                     _t4dskip
+	_t4expr_key                       _t4go
+	_t4out_of_date                  
+
+INPORT  	size = 24
+	_inport                           _inportb
+
+INSLINE 	size = 68
+	_delline                          _insline
+
+INT86   	size = 209
+	_int86                            _int86x
+
+INTDOS  	size = 149
+	_intdos                           _intdosx
+
+INTR    	size = 165
+	_intr                           
+
+IOCTL   	size = 45
+	_ioctl                          
+
+IOERROR 	size = 150
+	__IOERROR                         __dosErrorToSV
+	__doserrno                      
+
+ISATTY  	size = 24
+	_isatty                         
+
+KBHIT   	size = 6
+	_kbhit                          
+
+KEEP    	size = 20
+	_keep                           
+
+L4LINK  	size = 867
+	_l4add                            _l4add_after
+	_l4add_before                     _l4first
+	_l4last                           _l4next
+	_l4pop                            _l4prev
+	_l4remove                         _l4seek
+
+L4LOCK_C	size = 0
+
+LABS    	size = 42
+	_labs                           
+
+LDEXP   	size = 143
+	_ldexp                          
+
+LDIV    	size = 163
+	LDIV@                             LMOD@
+	LUDIV@                            LUMOD@
+
+LDIVT   	size = 162
+	_ldiv                           
+
+LDTRUNC 	size = 155
+	__LDTRUNC                       
+
+LLSH    	size = 31
+	LXLSH@                          
+
+LOADPROG	size = 219
+	__LoadProg                      
+
+LOCK    	size = 86
+	_lock                             _unlock
+
+LOG     	size = 166
+	_log                            
+
+LOG10   	size = 168
+	_log10                          
+
+LROTL   	size = 30
+	__lrotl                         
+
+LROTR   	size = 31
+	__lrotr                         
+
+LRSH    	size = 30
+	LXRSH@                          
+
+LSEARCH 	size = 194
+	_lfind                            _lsearch
+
+LSEEK   	size = 45
+	_lseek                          
+
+LTOA    	size = 252
+	__LONGTOA                         _itoa
+	_ltoa                             _ultoa
+
+LURSH   	size = 31
+	LXURSH@                         
+
+LXMUL   	size = 25
+	LXMUL@                          
+
+M4CHECK 	size = 0
+
+M4CREATE	size = 0
+
+M4FILE  	size = 0
+
+M4MAP   	size = 17093
+	_bitmap4combine_leafs             _bitmap4copy
+	_bitmap4create                    _bitmap4destroy
+	_bitmap4evaluate                
+
+M4MEMO  	size = 9
+	_d4validate_memo_ids            
+
+M4MEMORY	size = 1640
+	_mem4alloc                        _mem4alloc2
+	_mem4alloc_chunk                  _mem4create
+	_mem4create_alloc                 _mem4free
+	_mem4init                         _mem4release
+	_mem4reset                        _u4alloc
+	_u4alloc_er                       _u4free
+
+MALLOC  	size = 0
+
+MATHERR 	size = 52
+	_matherr                        
+
+MEMCCPY 	size = 58
+	_memccpy                        
+
+MEMCHR  	size = 39
+	_memchr                         
+
+MEMCMP  	size = 44
+	_memcmp                         
+
+MEMCPY  	size = 38
+	_memcpy                         
+
+MEMICMP 	size = 73
+	_memicmp                        
+
+MEMSET  	size = 69
+	_memset                           _setmem
+
+MKDIR   	size = 28
+	_mkdir                          
+
+MKTEMP  	size = 272
+	_mktemp                         
+
+MODF    	size = 81
+	_modf                           
+
+MOVEDATA	size = 34
+	_movedata                       
+
+MOVETEXT	size = 172
+	_movetext                       
+
+MOVMEM  	size = 116
+	_memmove                          _movmem
+
+O4OPT   	size = 6917
+	_d4update_prio                    _opt4block_clear
+	_opt4block_remove                 _opt4file_delete
+	_opt4file_find_list               _opt4file_flush_list
+	_opt4file_hash                    _opt4file_lru_top
+	_opt4file_read                    _opt4file_return_block
+	_opt4file_write                   _opt4flush_all
+	_opt4flush_write_buffer           _opt4set_priority
+
+OLDLRSH 	size = 60
+	LLSH@                             LRSH@
+	LURSH@                          
+
+OPEN    	size = 416
+	_open                           
+
+OPENA   	size = 77
+	__open                          
+
+OUTPORT 	size = 24
+	_outport                          _outportb
+
+OVERFLOW	size = 34
+	OVERFLOW@                       
+
+PADA    	size = 131
+	PADA@                             PSBA@
+
+PADD    	size = 91
+	PADD@                             PSUB@
+
+PARA    	size = 352
+	_CloseParaPort                    _IsParaPortOk
+	_OpenParaPort                     _SendParaPort
+	_SetPortParameter               
+
+PARSFNM 	size = 43
+	_parsfnm                        
+
+PCMP    	size = 33
+	PCMP@                           
+
+PCX     	size = 5125
+	_Chk_PCX                          _DecideOutput
+	_Mark16Pal                        _PCXBody
+	_PCXHead                          _PCXLine
+	_PutPCXLine                       _PutPCXPalette
+	_Set16Palette                     _Set256Palette
+	_Show_PCX                         _device
+	_file                             _nullFunc
+	_palette                          _picture
+	_scanline                       
+
+PEEK    	size = 32
+	_peek                             _peekb
+
+PERROR  	size = 719
+	_perror                           _sys_errlist
+	_sys_nerr                       
+
+PINA    	size = 96
+	PDEA@                             PINA@
+
+POKE    	size = 34
+	_poke                             _pokeb
+
+POLY    	size = 127
+	_poly                           
+
+POW     	size = 418
+	_pow                            
+
+POW10   	size = 328
+	_pow10                          
+
+PRINTF  	size = 36
+	_printf                         
+
+PSBP    	size = 37
+	PSBP@                           
+
+PUTC    	size = 716
+	__FPUTN                           __fputc
+	_fputc                            _fputchar
+
+PUTCH   	size = 25
+	_putch                          
+
+PUTENV  	size = 224
+	_putenv                         
+
+PUTS    	size = 75
+	_puts                           
+
+PUTW    	size = 117
+	_putw                           
+
+QSORT   	size = 575
+	_qsort                          
+
+R4CODE  	size = 17666
+	_for_windows                      _numexprs
+	_numlabels                        _numtotals
+	_objects4code                     _onumexprs
+	_onumlabels                       _onumtotals
+	_report4code_calcs                _report4code_calcv
+	_report4code_expr                 _report4code_filename
+	_report4code_filepath             _report4code_groups
+	_report4code_groupv               _report4code_nl
+	_report4code_out                  _report4code_relate
+	_report4code_relatev              _report4code_styles
+	_report4code_stylev               _report4code_textv
+	_report4program                   _report4stolower
+	_strip4blanks                   
+
+R4DRIVER	size = 897
+	_report4driver_init               _report4driver_init_undo
+	_report4driver_new_page           _report4driver_write
+	_report4output                    _report4page_size
+	_report4position                
+
+R4GROUP 	size = 641
+	_group4create                     _group4expr
+	_group4lookup                     _group4name_set
+
+R4LOG   	size = 4071
+	_data_list4add                    _data_list4expand_from_db_tree
+	_data_list4is_in                  _data_list4read_records
+	_data_list4remove                 _e4is_constant
+	_e4is_tag                         _log4add_to_list
+	_log4bitmap_do                    _log4determine_evaluation_order
+	_log4swap_entries                 _log4true
+
+R4OBJECT	size = 2602
+	_obj4display                      _obj4first
+	_obj4free                         _obj4next
+	_objects4display                  _objects4first
+	_objects4height                   _objects4next
+	_objects4purge                    _objectsort4init
+
+R4REINDE	size = 0
+
+R4REINDX	size = 5331
+	_i4reindex                        _r4key
+	_r4reindex_add                    _r4reindex_blocks_alloc
+	_r4reindex_finish                 _r4reindex_free
+	_r4reindex_init                   _r4reindex_supply_keys
+	_r4reindex_tag_headers_calc       _r4reindex_tag_headers_write
+	_r4reindex_todisk                 _r4reindex_write_keys
+	_t4reindex                        _v4clipper_dec
+	_v4clipper_len                  
+
+R4RELATE	size = 13585
+	_f4flag_get_next_flip             _f4flag_is_set_flip
+	_r4data_list_add                  _r4data_list_build
+	_r4data_list_find                 _r4data_list_free
+	_relate4blank_set                 _relate4bottom
+	_relate4build_scan_list           _relate4changed
+	_relate4create_slave              _relate4dbf_in_relation
+	_relate4do                        _relate4do_one
+	_relate4eof                       _relate4error_action
+	_relate4free                      _relate4free_relate
+	_relate4init                      _relate4init_relate
+	_relate4lock                      _relate4lookup
+	_relate4lookup_relate             _relate4match_len
+	_relate4next                      _relate4next_record_in_scan
+	_relate4next_scan_record          _relate4prev_record_in_scan
+	_relate4prev_scan_record          _relate4query_set
+	_relate4read_in                   _relate4read_rest
+	_relate4set_not_read              _relate4skip
+	_relate4skip_enable               _relate4sort
+	_relate4sort_free                 _relate4sort_get_record
+	_relate4sort_next_record          _relate4sort_prev_record
+	_relate4sort_set                  _relate4top
+	_relate4type                      _relate4unlock
+
+R4REPORT	size = 8360
+	_report4calc_first_change_group   _report4check_area_heights
+	_report4currency                  _report4display
+	_report4display_repeat_headers    _report4do
+	_report4free                      _report4init
+	_report4layout                    _report4leading_zero
+	_report4make_old_rec              _report4new_page
+	_report4obj_destroy               _report4objects_destroy
+	_report4output_handle             _report4parse_sstring
+	_report4printer                   _report4setup_expressions
+	_report4setup_margin_values       _report4setup_objheight
+	_report4sort                      _report4symbols_numeric
+	_report4to_hex                    _report4unparse_sstring
+	_u4ncat                           _units4cent
+	_units4inches                     _units4points
+
+R4SAVE  	size = 3851
+	_report4cleanup                   _report4save
+	_retrieve4string                  _retrieve_object_list
+
+R4SAVE_M	size = 5650
+	_report4retrieve                
+
+R4STYLES	size = 1021
+	_style4color                      _style4create
+	_style4default_create             _style4default_set
+	_style4lookup                   
+
+R4TEXT  	size = 2724
+	_text4alignment                   _text4conv_double
+	_text4create                      _text4date_format
+	_text4dec                         _text4display_once
+	_text4display_zero                _text4expr
+	_text4field                       _text4label
+	_text4len_max                     _text4len_set
+	_text4numeric                     _text4style
+	_text4total                       _text4use_brackets
+	_text4width                     
+
+R4TOTAL 	size = 1093
+	_total4create                     _total4create_total
+	_total4lookup                     _total4reset_level
+	_total4value_reset                _total4value_update
+
+RAND    	size = 61
+	_rand                             _srand
+
+RANDBLK 	size = 44
+	_randbrd                          _randbwr
+
+READ    	size = 197
+	_read                           
+
+READA   	size = 32
+	__read                          
+
+REALCVT 	size = 4
+	__REALCVT                         __turboCvt
+
+REALLOC 	size = 0
+
+RENAME  	size = 35
+	_rename                         
+
+REWIND  	size = 38
+	_rewind                         
+
+RMDIR   	size = 28
+	_rmdir                          
+
+ROTL    	size = 15
+	__rotl                          
+
+ROTR    	size = 15
+	__rotr                          
+
+RS232B  	size = 6508
+	DIDEX                             IBUF
+	P0                                P1
+	PORT                              RSFLG
+	SIDEX                             WCOUNT
+	_PUTCRS                           _arschk
+	_arsclose                         _arsopen
+	_arsread                          _arswrite
+
+RYTC20  	size = 11648
+	_Rockey                         
+
+S4INIT  	size = 1693
+	_sort4get_init                    _sort4get_mem_init
+	_sort4init                        _sort4init_alloc
+	_sort4init_pointers               _sort4init_set
+	_sort4spools_init               
+
+S4INITFR	size = 711
+	_relate4free_bitmaps              _sort4get_init_free
+	_sort4init_free                 
+
+S4NEXT  	size = 920
+	_s4next_spool_entry             
+
+S4QUICK 	size = 822
+	_cmp                              _s4quick
+
+S4SORT  	size = 1393
+	_s4delete_spool_entry             _s4flush
+	_sort4free                        _sort4get
+	_sort4get_ptr_ptr                 _sort4put
+
+SCANF   	size = 46
+	_scanf                          
+
+SCANNER 	size = 1416
+	__scanner                       
+
+SCANTOD 	size = 12
+	__scanpop                         __scanrslt
+	__scantod                         __turboFloat
+
+SCANTOL 	size = 466
+	__scantol                       
+
+SCOPY   	size = 28
+	SCOPY@                          
+
+SCREEN  	size = 465
+	__SCREENIO                        __VALIDATEXY
+
+SCROLL  	size = 416
+	__SCROLL                        
+
+SEARCHP 	size = 970
+	__SEARCHPATH                      _searchpath
+
+SEGREAD 	size = 29
+	_segread                        
+
+SETARGV 	size = 262
+	__setargv                       
+
+SETBLOCK	size = 32
+	_setblock                       
+
+SETBUF  	size = 44
+	_setbuf                         
+
+SETDATE 	size = 42
+	_setdate                          _settime
+
+SETDTA  	size = 14
+	_setdta                         
+
+SETENVP 	size = 68
+	__setenvp                       
+
+SETFTIME	size = 41
+	_setftime                       
+
+SETJMP  	size = 108
+	_longjmp                          _setjmp
+
+SETMODE 	size = 110
+	_setmode                        
+
+SETVBUF 	size = 326
+	__stdinStarted                    __stdoutStarted
+	_setvbuf                        
+
+SIGDATA 	size = 4
+	___SignalPtr                    
+
+SIGNAL  	size = 1090
+	_raise                            _signal
+
+SIN     	size = 93
+	_sin                            
+
+SINH    	size = 171
+	_sinh                           
+
+SLEEP   	size = 105
+	_sleep                          
+
+SOUND   	size = 51
+	_nosound                          _sound
+
+SPAWN   	size = 181
+	__spawn                         
+
+SPAWNL  	size = 93
+	_spawnl                         
+
+SPAWNLE 	size = 130
+	_spawnle                        
+
+SPAWNLP 	size = 94
+	_spawnlp                        
+
+SPAWNLPE	size = 131
+	_spawnlpe                       
+
+SPAWNV  	size = 94
+	_spawnv                         
+
+SPAWNVE 	size = 96
+	_spawnve                        
+
+SPAWNVP 	size = 95
+	_spawnvp                        
+
+SPAWNVPE	size = 97
+	_spawnvpe                       
+
+SPRINTF 	size = 134
+	_sprintf                          _vsprintf
+
+SPUSH   	size = 39
+	SPUSH@                          
+
+SQRT    	size = 80
+	_sqrt                           
+
+SSCANF  	size = 141
+	_sscanf                           _vsscanf
+
+STAT    	size = 181
+	_stat                           
+
+STAT87  	size = 22
+	__status87                      
+
+STIME   	size = 156
+	_stime                            _time
+
+STKLEN  	size = 2
+	__stklen                        
+
+STPCPY  	size = 56
+	_stpcpy                         
+
+STRCAT  	size = 66
+	_strcat                         
+
+STRCHR  	size = 62
+	_strchr                         
+
+STRCMP  	size = 50
+	_strcmp                         
+
+STRCPY  	size = 41
+	_strcpy                         
+
+STRCSPN 	size = 72
+	_strcspn                        
+
+STRDUP  	size = 74
+	_strdup                         
+
+STRERROR	size = 357
+	__strerror                        _strerror
+
+STRICMP 	size = 67
+	_stricmp                        
+
+STRLEN  	size = 27
+	_strlen                         
+
+STRLWR  	size = 37
+	_strlwr                         
+
+STRNCAT 	size = 93
+	_strncat                        
+
+STRNCMP 	size = 58
+	_strncmp                        
+
+STRNCPY 	size = 51
+	_strncpy                        
+
+STRNICMP	size = 70
+	_strnicmp                       
+
+STRNSET 	size = 59
+	_strnset                        
+
+STRPBRK 	size = 75
+	_strpbrk                        
+
+STRRCHR 	size = 72
+	_strrchr                        
+
+STRREV  	size = 53
+	_strrev                         
+
+STRSET  	size = 43
+	_strset                         
+
+STRSPN  	size = 83
+	_strspn                         
+
+STRSTR  	size = 111
+	_strstr                         
+
+STRTOD  	size = 200
+	_strtod                         
+
+STRTOK  	size = 208
+	_strtok                         
+
+STRTOL  	size = 181
+	_strtol                         
+
+STRTOUL 	size = 239
+	_strtoul                        
+
+STRUPR  	size = 37
+	_strupr                         
+
+SWAB    	size = 31
+	_swab                           
+
+SYSTEM  	size = 341
+	_system                         
+
+TAN     	size = 96
+	_tan                            
+
+TANH    	size = 119
+	_tanh                           
+
+TELL    	size = 25
+	_tell                           
+
+TEXTMODE	size = 48
+	_textmode                       
+
+TIMECVT 	size = 867
+	_dostounix                        _unixtodos
+
+TMPFILE 	size = 78
+	_tmpfile                        
+
+TMPNAM  	size = 200
+	__MKNAME                          __tmpnum
+	_tmpnam                         
+
+TOLOWER 	size = 49
+	_tolower                        
+
+TOUPPER 	size = 49
+	_toupper                        
+
+TZSET   	size = 774
+	__ISDST                           __monthDay
+	_daylight                         _timezone
+	_tzname                           _tzset
+
+U4NAME  	size = 967
+	_u4name_char                      _u4name_ext
+	_u4name_make                      _u4name_path
+	_u4name_piece                     _u4name_ret_ext
+
+U4UTIL  	size = 815
+	_u4alloc_again                    _u4alloc_free
+	_u4delay_sec                      _u4ncpy
+	_u4ptr_equal                      _u4remove
+	_u4rename                         _u4yymmdd
+	_v4buffer                       
+
+UMASK   	size = 25
+	_umask                          
+
+UNGETC  	size = 104
+	_ungetc                         
+
+UNIT    	size = 2853
+	_ChkDispMode                      _ChkMeasureMode
+	_FloatToString                    _InUnitFileString
+	_IntFloatToString                 _IntToString
+	_LongToString                     _Space
+	_StartTimeString                  _StringTimeSec
+	_SystemDate                       _Trim
+	_ValueTimeString                  _inFile
+	_textClose                        _textNextLine
+	_textNextToken                    _textOpen
+	_textRewind                     
+
+UNLINK  	size = 28
+	_unlink                         
+
+VFPRINTF	size = 38
+	_vfprintf                       
+
+VFSCANF 	size = 48
+	_vfscanf                        
+
+VGA     	size = 3333
+	_Arrange                          _C_BLACK
+	_C_BLUE                           _C_GOLDEN
+	_C_GRAY31                         _C_GRAYSUM
+	_C_GREEN                          _C_LIGHTBLUE
+	_C_LIGHTGRAY                      _C_LIGHTRED
+	_C_RED                            _C_WHITE
+	_C_YELLOW                         _Change256Color
+	_ClearBoxArea                     _CloseVGAMode
+	_DrawBox                          _DrawDownBox
+	_DrawLine                         _DrawPlane
+	_DrawPopUpBox                     _DrawPushDownBox
+	_DrawUpBox                        _Exchange
+	_GetPageAddress                   _HideCursor
+	_PutDot                           _SetVGAMode
+	_cB                               _cG
+	_cR                               _display
+
+VIDINFO 	size = 74
+	_gettextinfo                    
+
+VPRINTER	size = 1481
+	__VPRINTER                      
+
+VPRINTF 	size = 37
+	_vprintf                        
+
+VRAM    	size = 161
+	__VPTR                            __VRAM
+
+VSCANF  	size = 47
+	_vscanf                         
+
+WHEREXY 	size = 54
+	__wherexy                         _wherex
+	_wherey                         
+
+WILD    	size = 672
+	__wildargv                      
+
+WINDOW  	size = 106
+	_window                         
+
+WRITE   	size = 358
+	_write                          
+
+WRITEA  	size = 76
+	__write                         
+
+XCLOSE  	size = 21
+	__xclose                        
+
+XCVT    	size = 459
+	__XCVT                          
+
+XFCLOSE 	size = 56
+	__xfclose                       
+
+XFFLUSH 	size = 58
+	__xfflush                       
+
+_MATHERR	size = 277
+	__matherr                         _whyS

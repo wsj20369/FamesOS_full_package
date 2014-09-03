@@ -1,0 +1,33 @@
+32    
+== LOG REQUESTS LOST 1    ! ==
+2011-03-01 11:07:03.76 => Err=1000 : BMP file specified does not exist!
+2011-03-01 11:07:03.76 => Err=1000 : BMP file specified does not exist!
+2011-03-01 11:07:03.76 => Err=1000 : BMP file specified does not exist!
+2011-03-01 11:07:03.76 => Err=1000 : BMP file specified does not exist!
+2011-03-01 11:07:03.76 => Err=1000 : BMP file specified does not exist!
+2011-03-01 11:07:03.76 => Err=1000 : BMP file specified does not exist!
+2011-03-01 11:07:04.04 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:04.31 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:04.81 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:05.08 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:05.30 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:05.58 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:05.85 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:06.07 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:06.34 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:06.62 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:06.84 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:07.11 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:07.39 => Err=20   : Timeout when waiting plc's response!
+2011-03-01 11:07:07.61 => Err=20   : Timeout when waiting plc's response!
+2013-03-21  0:10:57.62 => Err=1000 : BMP file specified does not exist!
+2013-03-21  0:10:57.62 => Err=1000 : BMP file specified does not exist!
+2013-03-21  0:10:57.62 => Err=1000 : BMP file specified does not exist!
+2013-03-21  0:10:57.62 => Err=1000 : BMP file specified does not exist!
+2013-03-21  0:10:57.62 => Err=1000 : BMP file specified does not exist!
+2013-03-21  0:10:57.62 => Err=1000 : BMP file specified does not exist!
+2013-03-21  0:10:59.38 => Err=20   : Timeout when waiting plc's response!
+2013-03-21  0:10:59.65 => Err=20   : Timeout when waiting plc's response!
+2013-03-21  0:10:59.92 => Err=20   : Timeout when waiting plc's response!
+2013-03-21  0:11:00.14 => Err=20   : Timeout when waiting plc's response!
+2013-03-21  0:11:00.42 => Err=20   : Timeout when waiting plc's response!

@@ -1,0 +1,1037 @@
+<cisdtr>
+comm_isDTR                                              COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】偵測 DTR  線目前的狀態
+
+【用  法】#include "COMM.H"
+          BOOL comm_isDTR( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】TRUE﹐表示  DTR 線 ON
+          FALSE 表示  DTR 線 OFF
+
+【說  明】
+          DTR --- Data Terminal Ready
+          DTR 線通知 Modem﹐電腦電源已通﹐而且已準備好可以由
+          Modem處接收資料。DTR 位於 MCR暫存器的 BIT 0。
+<csetdtr>
+comm_setDTR                                             COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】設定 DTR  線為 ON
+
+【用  法】#include "COMM.H"
+          BOOL comm_setDTR( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】NONE
+<crdtr>
+comm_resetDTR                                           COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】設定  DTR 線 OFF
+
+【用  法】#include "COMM.H"
+          BOOL comm_resetDTR( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】NONE
+<cibreak>
+comm_isBreak                                            COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】偵測 Break  線目前的狀態
+
+【用  法】#include "COMM.H"
+          BOOL comm_isBreak( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】TRUE 表示   Break線 ON
+          FALSE 表示  Break線 OFF
+
+【說  明】
+          Break 位於 LCR暫存器的 Bit 6。
+<csbreak>
+comm_setBreak                                           COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】設定  Break線 ON
+
+【用  法】#include "COMM.H"
+          BOOL comm_setBreak( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】NONE
+<crbreak>
+comm_resetBreak                                         COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】設定  Break線 OFF
+
+【用  法】#include "COMM.H"
+          BOOL comm_resetBreak( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】NONE
+<cidcd>
+comm_isDCD                                              COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】偵測 DCD  線目前的狀態
+
+【用  法】#include "COMM.H"
+          BOOL comm_isDCD( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】TRUE 表示   DCD線 ON
+          FALSE 表示  DCD線 OFF
+
+【說  明】
+          DCD --- Data Carrier Detector
+          DCD 線  通知這邊 modem與另一邊的 modem已經連通。
+          DCD 位於 MSR暫存器的 bit 7。
+<ciri>
+comm_isRI                                               COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】偵測RI線目前的狀態
+
+【用  法】#include "COMM.H"
+          BOOL comm_isRI( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】TRUE﹐  表示   RI 線 ON
+          FALSE﹐ 表示   RI 線 OFF
+
+【說  明】
+          RI --- Ring Indicator
+          RI 線  通知目前電話正在響。
+          RI 位於 MSR暫存器的 bit 6。
+<cgstatus>
+comm_getStatus                                          COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】取得所指定暫存器的內容
+
+【用  法】#include "COMM.H"
+          int comm_getStatus( COMM *Port, int UARTRegister )
+
+【輸入值】COMM *Port
+          int   UARTRegister = LCR      Line Control Register
+                             = MCR      Modem Control Register
+                             = LSR      Line Status Register
+                             = MSR      Modem Status Register
+
+【輸出值】-1 表示  fail
+          其它值 表示所指定暫存器的內容。
+
+【說  明】我們只提供 4個常需取得內容的暫存器。
+<csstatus>
+comm_setStatus                                          COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】設定所指定暫存器的內容
+
+【用  法】#include "COMM.H"
+          void comm_setStatus( COM *Port, int UARTRegister, int newStatus )
+
+【輸入值】COMM *Port
+          int   UARTRegister = LCR      Line Control Register
+                             = MCR      Modem Control Register
+
+          int   newStatus    要設定所指定暫存器的值
+
+【輸出值】NONE
+
+【說  明】只提供 MCR及 LCR兩個暫存器。
+<csbuad>
+comm_setBaud                                            COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】設定傳輸率 bps
+
+【用  法】#include "COMM.H"
+          int comm_setBaud( COMM *Port, int baud )
+
+【輸入值】COMM *Port
+          int   baud = 9600     9600 bps
+                     = 2400     2400 bps
+                     = 1200     1200 bps
+                     =  300      300 bps
+【輸出值】-1 表示   設定沒成功
+          0  表示   設定成功
+【說  明】
+          當我們要設定 bps  時﹐必需先將 LCR的 bit 7設為 ON
+          此時該位址暫存器﹐才是 BAUDL及 BAUDH。
+<cparams>
+comm_params                                             COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】改變已經在使用通訊埠的參數值。
+【用  法】#include "COMM.H"
+          int comm_params( COMM *Port, int baud, int parity, int dataBit,
+                           int stopBit )
+【輸入值】COMM *Port
+          int   baud    = 9600, 2400, 1200, 300 bps
+          int   parity  = PARITY_NONE   ignore parity
+                        = PARITY_ODD    odd parity
+                        = PARITY_EVEN   even parity
+                        = PARITY_MARK   always ON
+                        = PARITY_SPACE  always OFF
+          int   databit = BIT7          7 data bits
+                        = BIT8          8 data bits
+          int   stopbit = STOP1         1 stop bit
+                        = STOP2         2 stop bit
+<copen>
+comm_open                                               COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+【功  能】啟用通訊埠﹐並設定通訊參數﹐及輸入輸出緩衝器
+【用  法】#include "COMM.H"
+          int comm_open( COMM *Port, int baud, int parity, int dataBit,
+【輸入值】COMM *Port
+          int   baud    = 9600, 2400, 1200, 300 bps
+          int   parity  = PARITY_NONE   ignore parity
+                        = PARITY_ODD    odd parity
+                        = PARITY_EVEN   even parity
+                        = PARITY_MARK   always ON
+                        = PARITY_SPACE  always OFF
+          int   databit = BIT7          7 data bits
+                        = BIT8          8 data bits
+          int   stopbit = STOP1         1 stop bit
+                        = STOP2         2 stop bit
+          int   inQueSize               size of input buffer
+          int   outQueSize              size of output buffer
+<cclose>
+comm_close                                              COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】關閉通訊埠 (Communication　Port)
+
+【用  法】#include "COMM.H"
+          void  comm_close( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】NONE
+
+【說  明】
+          1.  釋放 input/output buffer 所佔記憶體空間。
+
+          2.  釋放 struct COMM  所佔記憶體空間。
+
+          3.  恢復因通訊埠啟用而停止的原來中斷。
+<cportno>
+comm_portNum                                            COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】傳回目前使用的是那一個通訊埠。
+
+【用  法】#include "COMM.H"
+          int comm_portNum( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】0   : 表示沒有開啟任何一個通訊埠。
+          1-8 : 對應 COM1 到 COM8
+<cinno>
+comm_inNUM                                              COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】傳回輸入緩衝器  (input buffer) 內的字元個數。
+
+【用  法】#include "COMM.H"
+          int comm_inNUM( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】輸入緩衝器  (input buffer) 內的字元個數。
+<coutno>
+comm_outNUM                                             COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】傳回輸出緩衝器  (output buffer) 內的字元個數。
+
+【用  法】#include "COMM.H"
+          int comm_outNUM( COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】輸出入緩衝器  (output buffer) 內的字元個數。
+<cinclear>
+comm_inClear                                            COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】將輸入緩衝器  (input buffer) 清為空白。
+
+【用  法】#include "COMM.H"
+          int comm_inClear(register COMM *Port)
+
+【輸入值】COMM *Port
+
+【輸出值】
+          -1 : fail
+           0 : OK
+<coutclea>
+comm_outClear                                           COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】將輸出緩衝器  (output buffer) 清為空白。
+
+【用  法】#include "COMM.H"
+          int comm_outClear(register COMM *Port)
+
+【輸入值】COMM *Port
+
+【輸出值】
+          -1 : fail
+           0 : OK
+<cputc>
+comm_putc                                               COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】送一個字元到通訊埠。
+
+【用  法】#include "COMM.H"
+          char comm_putc( register COMM *Port, char ch )
+
+【輸入值】COMM *Port
+          char  ch              要送的字元
+
+【輸出值】
+          -1 : 失敗
+               1). 通訊埠沒開啟。
+               2). 已經接收到對方傳送來的 XOFF﹐禁止我方再送出資
+                   料。
+               3). Overflow  發生﹐表示 Ouput buffer overflow。
+          ch : 剛送的字元﹐表示傳送成功。
+<cputs>
+comm_puts                                               COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】送字串到通訊埠
+
+【用  法】#include "COMM.H"
+          int comm_puts( register COMM *Port,char *string )
+
+【輸入值】COMM *Port
+          char *string          要傳送的字串
+
+【輸出值】
+          -1     : 錯誤
+          其它值 : 最後被送出去字元的值﹐假如字串是空的﹐則為 0。
+
+【說  明】
+          1. 這字串必需為 ASCIIZ﹐這表示該字串以 null 結尾。
+          2. 這個函數並沒有加 '\n' 或 '\r'的字元到該字串上。
+<cgetc>
+comm_getc                                               COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】由通訊埠的輸入緩衝器 input buffer 內讀取一個字元。
+
+【用  法】#include "COMM.H"
+          char comm_getc( register COMM *Port )
+
+【輸入值】COMM *Port
+
+【輸出值】
+          -1     : 表示失敗
+          其它值 : 剛讀取的字元
+<cinkey>
+comm_inkey                                              COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】由通訊埠的輸入緩衝器 input buffer 內讀取一個字元。
+          會一直等到有字為止
+【用  法】#include "COMM.H"
+          BOOL comm_inkey( register COMM *Port, char *ch )
+
+【輸入值】COMM *Port
+
+【輸出值】
+          FALSE  : 表示失敗
+          TRUE   : 將讀取的字元放入 ch 中
+<cgets>
+comm_gets                                               COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】由通訊埠的輸入緩衝器 input buffer 內讀取一個字串。
+
+【用  法】#include "COMM.H"
+          char *comm_gets( COMM *Port, char *string, int MaxLen,
+                           int MaxTime )
+
+【輸入值】COMM *Port
+          char *string          存放將讀取來字串的 buffer
+          int   MaxLen          字串的最大長度
+          int   MaxTime         允許接收字串時﹐等待的最長時間
+
+【輸出值】
+          NULL  : 表示失敗
+          其它值: 剛讀取的字串
+<cungetc>
+comm_ungetc                                             COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】將字元放回 input buffer 。
+
+【用  法】#include "COMM.H"
+          char comm_ungetc( register COMM *Port, char ch  )
+
+【輸入值】COMM *Port
+          char  ch
+
+【輸出值】
+          -1 : 表示失敗
+          ch : 傳回剛放回 input buffer的字元 ---  表示成功
+
+【說  明】
+
+          1.  放回的字元﹐就是下回要讀取的字元。
+<cread>
+comm_read                                               COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】由通訊埠中讀取數個固定長度的字串
+【用  法】#include "COMM.H"
+          int comm_read( COMM *Port, char *buffer, int Size, int Num,
+                int MaxTime )
+【輸入值】COMM *Port
+          char *buffer          放置的 buffer
+          int   Size            每個字串的長度
+          int   Num             字串的個數
+          int   MaxTime         允許的最長時間
+【輸出值】
+          -1    : 失敗
+          其他值: 讀取字串的個數
+【說  明】
+          1.  我們得到資料﹐將放入 'buffer' 內。
+          2.  適合用於放置固定長度的 arrary ﹐像 structure。
+<cwrite>
+comm_write                                              COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】傳送給通訊埠幾個固定長度的字串
+【用  法】#include "COMM.H"
+          int comm_write( COMM *Port, char *buffer, int Size, int Num)
+【輸入值】COMM *Port
+          char *buffer          放置的 buffer
+          int   Size            每個字串的長度
+          int   Num             字串的個數
+【輸出值】
+          -1    : 失敗
+          其他值: 傳送字串的個數
+【說  明】
+          1. 資料將由 'buffer'中讀取
+          2.  適合用於傳送固定長度的陣列(arrary)﹐像 structure。
+          3.  讀到的字串不像一般字串﹐並沒有填 null 到字串尾巴﹐
+              而且不把 '\r' 當成結束看待。
+<cprintf>
+comm_printf                                             COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】依照所指定的格式﹐將資料傳送給通訊埠
+
+【用  法】#include "COMM.H"
+          int comm_printf( register COMM *Port, char *format, ... )
+
+【輸入值】COMM *Port
+          char *format          要使用的格式
+
+【輸出值】
+          -1     : 失敗
+          其它值 : 傳送字串的長度
+<ceof>
+comm_eof                                                COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+【功  能】允許一段時間﹐等待資料傳送到通訊埠
+【用  法】#include "COMM.H"
+          int comm_eof( register COMM *Port, int MaxTime )
+【輸入值】COMM *Port
+          int   MaxTime         等待的時間
+【輸出值】
+          -1 : 失敗  (通訊埠未開啟)
+           1 : 沒有字元傳入
+           0 : 有一些字元傳入
+【說  明】
+          1.  這函數會一直等待字元傳入﹐也可以指定只在一定期間內
+              等待字元傳入。
+          2.  對於通訊埠未開啟時﹐則傳回 -1 值﹐看起來就像 eof的
+              狀態。
+          3. 因此我們以 eof 的狀態﹐表示在這一段時間內沒有字元傳
+             入。
+<cwait>
+comm_waitFor                                            COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+【功  能】等待字串傳入通訊埠
+【用  法】#include "COMM.H"
+          int comm_waitFor(COMM *Port,char *string,int MaxTime,int mode)
+【輸入值】COMM *Port
+          char *string          等待的字串
+          int   MaxTime         等待的最長時間
+          int   mode = 0        大小寫有區別
+                     = 1        大小寫沒有區別
+【輸出值】
+          -1      : 失敗  (通訊埠未開啟)
+           其它值 : 沒有找到
+           0      : 找到
+【說  明】
+          1.  對於未開啟的通訊埠﹐這函數會傳回 -1 的值﹐看起來就
+              沒有找到。
+          2.  程式執行期間 input buffer 內的資料會被丟棄。
+<cwaitq>
+comm_waitQuiet                                          COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】等待一段時間﹐而這段時間內沒有資料傳入通訊埠
+【用  法】#include "COMM.H"
+          void comm_waitQuiet(COMM *Port,int MaxTime,int mode)
+【輸入值】COMM *Port
+          int   MaxTime         等待的時間
+          int   mode = 0        丟棄 input buffer 內的資料
+                     = 1        保留 input buffer 內的資料
+【輸出值】NONE
+【說  明】
+          1.  mode 0, 程式執行期間 input buffer 內的資料會被丟棄。
+              也就是程式執行完畢時﹐所指定通訊埠的 input buffer
+              是空的。
+          2.  mode 1﹐正好相反﹐我們可以得知傳入的資料內容﹐而不
+              會被丟棄。
+          3.  當採用 mode 1 時﹐需注意 buffer 的 overflow 。
+<cbreak>
+comm_break                                              COMM
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】在 'MaxTime' 個 1/18 秒內﹐設定 BREAK 訊號
+
+【用  法】#include "COMM.H"
+          int comm_break( COMM *Port, int MaxTime )
+
+【輸入值】COMM *Port
+          int   MaxTime         設定 BREAK 訊號的時間
+
+【輸出值】
+          -1 : fail
+           0 : OK
+<tset>
+timerSet                                               TIMER
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】啟用 timer  及設定到期時間
+
+【用  法】#include "UTILITY.H"
+          void  timerSet( int count )
+
+【輸入值】int   count           clock tick(1/18 秒) 的次數
+
+【輸出值】NONE
+
+【說  明】
+          到期的時間是 count 乘上 (1/18) 秒之後
+<tunset>
+timerUnSet                                             TIMER
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】關閉 timer
+
+【用  法】#include "UTILITY.H"
+          void  timerUnSet( void )
+
+【輸入值】NONE
+
+【輸出值】NONE
+<tinuse>
+timerInUse                                             TIMER
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】查詢 timer  是否啟用 ?
+
+【用  法】#include "UTILITY.H"
+          BOOL  timerInUse( void )
+
+【輸入值】NONE
+
+【輸出值】
+          TRUE  : 啟用
+          FALSE : 沒啟用
+<tisup>
+timerIsUp                                              TIMER
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】查詢時間是否到期 ?
+
+【用  法】#include "UTILITY.H"
+          BOOL  timerIsUp( void )
+
+【輸入值】NONE
+
+【輸出值】
+          TRUE  : 到期
+          FALSE : 沒到期
+<tnotup>
+timerIsNotUp                                           TIMER
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】查詢時間是否還沒到期 ?
+
+【用  法】#include "UTILITY.H"
+          BOOL  timerIsNotUp( void )
+
+【輸入值】NONE
+
+【輸出值】
+          TRUE  : not yet
+          FALSE : up
+<bisr>
+breakISR                                               BREAK
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】處理 Ctrl-Break 的 ISR 程式
+
+【用  法】
+          void  interrupt   breakISR( void )
+
+【輸入值】NONE
+
+【輸出值】NONE
+
+【說  明】
+          1.  程式設計者並不能直接使用﹐而是跟隨程式庫的。
+<binstall>
+breakInstall                                               BREAK
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】啟動 Ctrl-Break  管理程式
+
+【用  法】#include "UTILITY.H"
+          void  breakInstall( void )
+
+【輸入值】NONE
+
+【輸出值】NONE
+
+【說  明】
+          1. 假如安裝了 Ctrl-Break 的ISR 程式﹐記得在程式離開
+             前除去 ISR 程式。
+<bunin>
+breakUnInstall                                             BREAK
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】除去 Ctrl-Break  管理程式
+
+【用  法】#include "UTILITY.H"
+          void  breakUnInstall( void )
+
+【輸入值】NONE
+
+【輸出值】NONE
+<bpress>
+breakPressed                                               BREAK
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】自從上次查過之後﹐使用者是否又按了 Ctrl-Break 鍵  ?
+
+【用  法】#include "UTILITY.H"
+          void  breakPressed( void )
+
+【輸入值】NONE
+
+【輸出值】
+          TRUE  : had been
+          FALSE : not yet
+
+【說  明】
+          每次呼叫該 ISR程式後﹐會將 Ctrl-Break flag 設 OFF
+<breset>
+breakReset                                                 BREAK
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】設 Ctrl-Break flag 為 OFF
+
+【用  法】#include "UTILITY.H"
+          void  breakReset( void )
+
+【輸入值】NONE
+
+【輸出值】NONE
+
+【說  明】
+          當我們想忽視以前使用的情形時使用
+<schange>
+changeScreen                                          SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】啟動及轉換到新的 WINDOW
+
+【用  法】#include "UTILITY.H"
+          void changeScreen( int x1, int y1, int x2, int y2 ,
+                             BOOL Saving )
+
+【輸入值】
+          int   x1              column of 起始位置
+          int   y1              row    of 起始位置
+          int   x2              column of 結束位置
+          int   y2              row    of 結束位置
+          BOOL  Saving          是否回復 MAIN WINDOW
+
+【輸出值】NONE
+<crestore>
+restoreScreen                                         SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】回復 MAIN WINDOW
+
+【用  法】#include "UTILITY.H"
+          void restoreScreen( BOOL Saving )
+
+【輸入值】
+          BOOL  Saving          是否回復 MAIN WINDOW
+
+【輸出值】NONE
+<smain>
+mainScreen                                            SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】設定  MAIN WINDOW
+
+【用  法】#include "UTILITY.H"
+          void mainScreen( void )
+
+【輸入值】NONE
+
+【輸出值】NONE
+
+【說  明】
+          大部份於程式開始時使用﹐且使用一次而已。
+<sprompt>
+prompt                                                SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】於底行顯示訊息﹐而不需要回復 cursor 的位置
+
+【用  法】#include "UTILITY.H"
+          void prompt( char *pStr )
+
+【輸入值】
+          char *pStr            要顯示的字串
+
+【輸出值】NONE
+<smessage>
+message                                               SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】於底行顯示訊息﹐而需要回復 cursor 的位置
+
+【用  法】#include "UTILITY.H"
+          void message( char *pStr )
+
+【輸入值】
+          char *pStr            要顯示的字串
+
+【輸出值】NONE
+<sbeep>
+beep                                                  SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】以特定頻率發出響聲
+
+【用  法】#include "UTILITY.H"
+          void  beep( int frequency, int duration )
+
+【輸入值】
+          int   frequency       in Hz
+          int   durtion         in ms (0.001 秒)
+
+【輸出值】NONE
+<sask>
+ask                                                   SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】於底行顯示訊息﹐而在 X,Y  的位置等待回答的字串
+
+【用  法】#include "UTILITY.H"
+          void  ask( int x, int y, char *askMessage, char *buffer )
+
+【輸入值】
+          int   x               等待回答的 column
+          int   y               等待回答的 row
+          char *askMessage      於底行顯示訊息
+          char *buffer          等待回答字串的 BUFFER
+
+【輸出值】NONE
+<sqcbox>
+queryCharBox                                          SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】要求回答一個字元﹐有 message, validation, 及 window
+
+【用  法】#include "UTILITY.H"
+          char  queryCharBox( char *askMessage, char *validString )
+
+【輸入值】
+          char *askMessage      顯示訊息
+          char *validString     含有效字元的字串
+
+【輸出值】
+          我們得到是字元
+<sqsbox>
+queryStringBox                                        SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】要求回答一個字串﹐有 message 及 window
+
+【用  法】#include "UTILITY.H"
+          void  queryStringBox( char *askMessage, char *buffer )
+
+【輸入值】
+          char *askMessage      顯示訊息
+          char *buffer          等待回答字串的 BUFFER
+
+【輸出值】NONE
+
+【說  明】
+          這裡要求字串不可超過 14 BYTES 長。
+<sgcvalid>
+getCharValid                                          SCREEN
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】只取出在該字串內的字元
+
+【用  法】#include "UTILITY.H"
+          char getCharValid( char *validString )
+
+【輸入值】
+          char *validString     含有效字元的字串
+
+【輸出值】
+          character we get
+<key>
+inkey                                                  INKEY
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】由鍵盤取得鍵值
+
+【用  法】#include "INKEY.H"
+          int  inkey( void )
+
+【輸入值】NONE
+
+【輸出值】
+          我們取得的字元
+
+【說  明】
+          這個函數可以處理特殊鍵﹐例如 CRTL 鍵及 ALT  鍵
+<dcommand>
+modemCommand                                            DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】送出命令給 modem
+
+【用  法】#include "DIAL.H"
+          void    modemCommand( char *command )
+
+【輸入值】
+          char  *command                命令字串
+
+【輸出值】NONE
+【說  明】
+          會連接在 CommandPrefix 命令及 Quiet 命令之後﹐並且後頭
+          再加上 EndOfCommand 命令。
+
+          輸入的命令字串是   "Z" (重置命令)﹐實際上送到 MODEM 的
+          命令是 "ATQ0Z\r"。
+<dinit>
+initialModem                                            DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】啟始 (Initialize) modem
+
+【用  法】#include "DIAL.H"
+          void    initialModem( void )
+
+【輸入值】NONE
+
+【輸出值】NONE
+<dsub>
+strSubMatch                                             DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】檢查子字串是否在主字串裡面 ?
+
+【用  法】#include "DIAL.H"
+          char    *strSubMatch( char *mainString, char *subString )
+
+【輸入值】
+          char  *mainString             主字串
+          char  *subString              子字串
+
+【輸出值】
+          NULL                          不合
+          其他值                        主字串內合的第一個字元
+
+【說  明】
+          大小寫不管
+<dreturn>
+modemReturnCode                                         DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】檢查 modem  的傳回值
+
+【用  法】#include "DIAL.H"
+          int     modemReturnCode( void )
+
+【輸入值】NONE
+
+【輸出值】
+          -1                    沒有
+          其他值                對應到 modem  的回復值
+
+【說  明】
+          把 waitBuffer 內的字串與每一個可能的回復訊息做比較
+<dwaitdcd>
+modemWaitDCD                                            DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】一直等待對方 MODEM  的回復
+
+【用  法】#include "DIAL.H"
+          int     modemWaitDCD( void )
+
+【輸入值】NONE
+
+【輸出值】
+          ModemInvalidMessage     不是一個有效的回復
+          ModemUserCancel         user  取消
+          其他值                  對應 modem  的回復碼
+<ddial>
+dial                                                    DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】撥電話號碼
+
+【用  法】#include "DIAL.H"
+          int     dial( char *phoneNumber )
+
+【輸入值】
+          char *phoneNumber     要撥的電話號碼
+
+【輸出值】
+          -1                    沒有
+          其他值                對應 modem  的回復碼
+<dfetch>
+modemFetchResponse                                      DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】抓取 modem  的回復
+
+【用  法】#include "DIAL.H"
+          BOOL    modemFetchResponse( int numChar )
+
+【輸入值】NONE
+
+【輸出值】
+          OK            MODEM 有回復﹐並且放入 waitBuffer 內
+          FAIL          MODEM 沒有回復
+<dresp>
+modemResponse                                           DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】抓取 modem 的回復碼
+
+【用  法】#include "DIAL.H"
+          int     modemResponse( void )
+
+【輸入值】NONE
+
+【輸出值】
+          ModemInvalidMessage   不是有效的回復
+          -1                    NONE
+          其他值                對應 modem  的回復碼
+<danswer>
+answer                                                  DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】回答電話
+
+【用  法】#include "DIAL.H"
+          int     answer( void )
+
+【輸入值】NONE
+
+【輸出值】
+          ModemInvalidMessage   不是有效的回復
+          -1                    NONE
+          其他值                對應 modem  的回復碼
+<dauto>
+autoAnswer                                              DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】先偵測到電話響﹐接起電話回答
+
+【用  法】#include "DIAL.H"
+          int     autoAnswer( void )
+
+【輸入值】NONE
+
+【輸出值】
+          ModemInvalidMessage   不是有效的回復
+          -1                    NONE
+          其他值                對應 modem  的回復碼
+<dcstate>
+modemCommandState                                       DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】回到 modem 命令狀態
+
+【用  法】#include "DIAL.H"
+          BOOL    modemCommandState( void )
+
+【輸入值】NONE
+
+【輸出值】
+          OK            成功
+          FAIL          失敗
+
+【說  明】
+          送一個斷線 (Off Line) 命令
+<dretry>
+modemCommandRetry                                       DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】重送命令 4  次
+
+【用  法】#include "DIAL.H"
+          BOOL    modemCommandRetry( char *sPtr, int retry )
+
+【輸入值】
+          char  *sPtr           命令字串
+          int    retry          重送次數
+
+【輸出值】
+          OK                    成功
+          FAIL                  失敗
+<dhang>
+modemHangUp                                             DIAL
+－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
+
+【功  能】掛掉(Hang up) 電話
+
+【用  法】#include "DIAL.H"
+          BOOL    modemHangUp( void )
+
+【輸入值】NONE
+
+【輸出值】
+          OK                    成功
+          FAIL                  失敗
+ <end>
+

@@ -1,0 +1,851 @@
+Publics by module
+
+ABS     	size = 16
+	_abs                            
+
+ABSREAD 	size = 80
+	_absread                          _abswrite
+
+ACCESS  	size = 61
+	_access                         
+
+ALLOCMEM	size = 37
+	_allocmem                       
+
+ATEXIT  	size = 104
+	__atexitcnt                       __atexittbl
+	_atexit                         
+
+ATOL    	size = 137
+	_atoi                             _atol
+
+BDOS    	size = 22
+	_bdos                           
+
+BDOSPTR 	size = 33
+	_bdosptr                        
+
+BIOSCOM 	size = 16
+	_bioscom                        
+
+BIOSDISK	size = 57
+	_biosdisk                       
+
+BIOSEQU 	size = 30
+	_biosequip                        _biosmemory
+	_biostime                       
+
+BIOSKEY 	size = 58
+	_bioskey                        
+
+BIOSPRIN	size = 22
+	_biosprint                      
+
+BRK     	size = 36
+	_brk                              _sbrk
+
+BSEARCH 	size = 124
+	_bsearch                        
+
+CALLOC  	size = 104
+	_calloc                         
+
+CGETS   	size = 38
+	_cgets                          
+
+CHDIR   	size = 51
+	_chdir                            _getdisk
+	_setdisk                        
+
+CHMOD   	size = 80
+	_chmod                          
+
+CHMODA  	size = 31
+	__chmod                         
+
+CHSIZE  	size = 202
+	_chsize                         
+
+CLEARERR	size = 14
+	_clearerr                       
+
+CLOCK   	size = 57
+	_clock                          
+
+CLOSE   	size = 45
+	_close                          
+
+CLOSEA  	size = 36
+	__close                         
+
+CLOSEALL	size = 62
+	_fcloseall                      
+
+CLREOL  	size = 37
+	_clreol                         
+
+CLRSCR  	size = 41
+	_clrscr                         
+
+COLOR   	size = 76
+	_highvideo                        _lowvideo
+	_normvideo                        _textattr
+	_textbackground                   _textcolor
+
+CORELEFT	size = 6
+	_coreleft                       
+
+COUNTRY 	size = 33
+	_country                        
+
+CPRINTF 	size = 338
+	__CPUTN                           _cprintf
+
+CPUTS   	size = 32
+	_cputs                          
+
+CREAT   	size = 120
+	_creat                          
+
+CREATA  	size = 131
+	__creat                           _creatnew
+	_creattemp                      
+
+CRTINIT 	size = 309
+	__VideoInt                        __c0crtinit
+	__crtinit                         __turboCrt
+	__video                           _directvideo
+
+CSCANF  	size = 35
+	_cscanf                         
+
+CTIME   	size = 970
+	_asctime                          _ctime
+	_gmtime                           _localtime
+
+CTRLBRK 	size = 66
+	_ctrlbrk                        
+
+CTYPE   	size = 257
+	__ctype                         
+
+CVTFAK  	size = 90
+	__cvtfak                        
+
+DELAY   	size = 182
+	_delay                          
+
+DIFFTIME	size = 30
+	_difftime                       
+
+DIVT    	size = 12
+	_div                            
+
+DOSCMD  	size = 256
+	__DOSCMD                        
+
+DOSENV  	size = 335
+	__DOSENV                        
+
+DOSEXT  	size = 31
+	_dosexterr                      
+
+DOSTIMU 	size = 198
+	__DOSTIMETOU                    
+
+DUP2    	size = 108
+	_dup                              _dup2
+
+EOF     	size = 110
+	_eof                            
+
+EXEC    	size = 828
+	__exec                          
+
+EXECL   	size = 34
+	_execl                          
+
+EXECLE  	size = 77
+	_execle                         
+
+EXECLP  	size = 35
+	_execlp                         
+
+EXECLPE 	size = 78
+	_execlpe                        
+
+EXECV   	size = 35
+	_execv                          
+
+EXECVE  	size = 37
+	_execve                         
+
+EXECVP  	size = 36
+	_execvp                         
+
+EXECVPE 	size = 38
+	_execvpe                        
+
+EXIT    	size = 54
+	__exitbuf                         __exitfopen
+	__exitopen                        _exit
+
+FBRK    	size = 338
+	__brk                             __sbrk
+
+FCALLOC 	size = 146
+	_farcalloc                      
+
+FCLOSE  	size = 198
+	_fclose                         
+
+FCORELFT	size = 29
+	_farcoreleft                    
+
+FFLUSH  	size = 230
+	_fflush                         
+
+FFREE   	size = 788
+	_farfree                          _free
+
+FGETPOS 	size = 45
+	_fgetpos                        
+
+FGETS   	size = 154
+	_fgets                          
+
+FILES   	size = 400
+	__streams                       
+
+FILES2  	size = 40
+	__openfd                        
+
+FINDFIRS	size = 66
+	_findfirst                        _findnext
+
+FLENGTH 	size = 67
+	_filelength                     
+
+FLUSHALL	size = 67
+	_flushall                       
+
+FMALLOC 	size = 786
+	__first                           __last
+	__pull_free_block                 __rover
+	_farmalloc                        _malloc
+
+FMODE   	size = 4
+	__fmode                           __notUmask
+
+FNMERGE 	size = 189
+	_fnmerge                        
+
+FNSPLIT 	size = 678
+	_fnsplit                        
+
+FOPEN   	size = 699
+	_fdopen                           _fopen
+	_freopen                        
+
+FPRINTF 	size = 31
+	_fprintf                        
+
+FPUTS   	size = 58
+	_fputs                          
+
+FREAD   	size = 394
+	_fread                          
+
+FREALLOC	size = 163
+	_farrealloc                       _realloc
+
+FREE    	size = 0
+
+FREEMEM 	size = 24
+	_freemem                        
+
+FSCANF  	size = 37
+	_fscanf                         
+
+FSEEK   	size = 324
+	_fseek                            _ftell
+
+FSETPOS 	size = 31
+	_fsetpos                        
+
+FSTAT   	size = 127
+	_fstat                          
+
+FTIME   	size = 194
+	_ftime                          
+
+FWRITE  	size = 133
+	_fwrite                         
+
+GETC    	size = 575
+	__fgetc                           _fgetc
+	_fgetchar                       
+
+GETCBRK 	size = 31
+	_getcbrk                          _setcbrk
+
+GETCH   	size = 92
+	_getch                            _getche
+	_ungetch                        
+
+GETCURDI	size = 31
+	_getcurdir                      
+
+GETCWD  	size = 140
+	_getcwd                         
+
+GETDATE 	size = 44
+	_getdate                          _gettime
+
+GETDTA  	size = 11
+	_getdta                         
+
+GETENV  	size = 115
+	_getenv                         
+
+GETFAT  	size = 112
+	_getdfree                         _getfat
+	_getfatd                        
+
+GETFTIME	size = 39
+	_getftime                       
+
+GETPASS 	size = 167
+	_getpass                        
+
+GETPSP  	size = 9
+	_getpsp                         
+
+GETS    	size = 138
+	_gets                           
+
+GETSWIT 	size = 25
+	_getswitchar                      _setswitchar
+
+GETVECT 	size = 35
+	_getvect                          _setvect
+
+GETVERF 	size = 24
+	_getverify                        _setverify
+
+GETW    	size = 120
+	_getw                           
+
+GEXIT   	size = 12
+	__graphexit                     
+
+GFREEMEM	size = 16
+	__graphfreemem                  
+
+GGETMEM 	size = 14
+	__graphgetmem                   
+
+GOTOXY  	size = 89
+	_gotoxy                         
+
+GPTEXT  	size = 139
+	_gettext                          _puttext
+
+GREGISTR	size = 32
+	_registerbgidriver                _registerbgifont
+
+HARDERR 	size = 162
+	_harderr                          _hardresume
+	_hardretn                       
+
+HEAPLEN 	size = 0
+
+INPORT  	size = 24
+	_inport                           _inportb
+
+INSLINE 	size = 60
+	_delline                          _insline
+
+INT86   	size = 203
+	_int86                            _int86x
+
+INTDOS  	size = 143
+	_intdos                           _intdosx
+
+INTR    	size = 165
+	_intr                           
+
+IOCTL   	size = 43
+	_ioctl                          
+
+IOERROR 	size = 150
+	__IOERROR                         __dosErrorToSV
+	__doserrno                      
+
+ISATTY  	size = 24
+	_isatty                         
+
+KBHIT   	size = 6
+	_kbhit                          
+
+KEEP    	size = 18
+	_keep                           
+
+LABS    	size = 42
+	_labs                           
+
+LDIV    	size = 163
+	LDIV@                             LMOD@
+	LUDIV@                            LUMOD@
+
+LDIVT   	size = 160
+	_ldiv                           
+
+LLSH    	size = 31
+	LXLSH@                          
+
+LOADPROG	size = 207
+	__LoadProg                      
+
+LOCK    	size = 82
+	_lock                             _unlock
+
+LROTL   	size = 30
+	__lrotl                         
+
+LROTR   	size = 31
+	__lrotr                         
+
+LRSH    	size = 30
+	LXRSH@                          
+
+LSEARCH 	size = 186
+	_lfind                            _lsearch
+
+LSEEK   	size = 43
+	_lseek                          
+
+LTOA    	size = 249
+	__LONGTOA                         _itoa
+	_ltoa                             _ultoa
+
+LURSH   	size = 31
+	LXURSH@                         
+
+LXMUL   	size = 25
+	LXMUL@                          
+
+MALLOC  	size = 0
+
+MEMCCPY 	size = 58
+	_memccpy                        
+
+MEMCHR  	size = 39
+	_memchr                         
+
+MEMCMP  	size = 44
+	_memcmp                         
+
+MEMCPY  	size = 38
+	_memcpy                         
+
+MEMICMP 	size = 69
+	_memicmp                        
+
+MEMSET  	size = 68
+	_memset                           _setmem
+
+MKDIR   	size = 26
+	_mkdir                          
+
+MKTEMP  	size = 266
+	_mktemp                         
+
+MOVEDATA	size = 34
+	_movedata                       
+
+MOVETEXT	size = 162
+	_movetext                       
+
+MOVMEM  	size = 115
+	_memmove                          _movmem
+
+OLDLRSH 	size = 60
+	LLSH@                             LRSH@
+	LURSH@                          
+
+OPEN    	size = 398
+	_open                           
+
+OPENA   	size = 75
+	__open                          
+
+OUTPORT 	size = 24
+	_outport                          _outportb
+
+OVERFLOW	size = 32
+	OVERFLOW@                       
+
+PADA    	size = 131
+	PADA@                             PSBA@
+
+PADD    	size = 91
+	PADD@                             PSUB@
+
+PARSFNM 	size = 43
+	_parsfnm                        
+
+PCMP    	size = 33
+	PCMP@                           
+
+PEEK    	size = 32
+	_peek                             _peekb
+
+PERROR  	size = 717
+	_perror                           _sys_errlist
+	_sys_nerr                       
+
+PINA    	size = 96
+	PDEA@                             PINA@
+
+POKE    	size = 34
+	_poke                             _pokeb
+
+PRINTF  	size = 30
+	_printf                         
+
+PSBP    	size = 37
+	PSBP@                           
+
+PUTC    	size = 695
+	__FPUTN                           __fputc
+	_fputc                            _fputchar
+
+PUTCH   	size = 23
+	_putch                          
+
+PUTENV  	size = 220
+	_putenv                         
+
+PUTS    	size = 69
+	_puts                           
+
+PUTW    	size = 113
+	_putw                           
+
+QSORT   	size = 568
+	_qsort                          
+
+RAND    	size = 61
+	_rand                             _srand
+
+RANDBLK 	size = 44
+	_randbrd                          _randbwr
+
+READ    	size = 191
+	_read                           
+
+READA   	size = 30
+	__read                          
+
+REALCVT 	size = 4
+	__REALCVT                       
+
+REALLOC 	size = 0
+
+RENAME  	size = 33
+	_rename                         
+
+REWIND  	size = 36
+	_rewind                         
+
+RMDIR   	size = 26
+	_rmdir                          
+
+ROTL    	size = 15
+	__rotl                          
+
+ROTR    	size = 15
+	__rotr                          
+
+SCANF   	size = 36
+	_scanf                          
+
+SCANNER 	size = 1394
+	__scanner                       
+
+SCANTOD 	size = 12
+	__scanpop                         __scanrslt
+	__scantod                       
+
+SCANTOL 	size = 466
+	__scantol                       
+
+SCOPY   	size = 28
+	SCOPY@                          
+
+SCREEN  	size = 453
+	__SCREENIO                        __VALIDATEXY
+
+SCROLL  	size = 402
+	__SCROLL                        
+
+SEARCHP 	size = 959
+	__SEARCHPATH                      _searchpath
+
+SEGREAD 	size = 29
+	_segread                        
+
+SETARGV 	size = 253
+	__setargv                       
+
+SETBLOCK	size = 30
+	_setblock                       
+
+SETBUF  	size = 42
+	_setbuf                         
+
+SETDATE 	size = 42
+	_setdate                          _settime
+
+SETDTA  	size = 14
+	_setdta                         
+
+SETENVP 	size = 64
+	__setenvp                       
+
+SETFTIME	size = 39
+	_setftime                       
+
+SETJMP  	size = 107
+	_longjmp                          _setjmp
+
+SETMODE 	size = 106
+	_setmode                        
+
+SETVBUF 	size = 314
+	__stdinStarted                    __stdoutStarted
+	_setvbuf                        
+
+SIGDATA 	size = 2
+	___SignalPtr                    
+
+SIGNAL  	size = 819
+	_raise                            _signal
+
+SLEEP   	size = 99
+	_sleep                          
+
+SOUND   	size = 51
+	_nosound                          _sound
+
+SPAWN   	size = 179
+	__spawn                         
+
+SPAWNL  	size = 69
+	_spawnl                         
+
+SPAWNLE 	size = 111
+	_spawnle                        
+
+SPAWNLP 	size = 70
+	_spawnlp                        
+
+SPAWNLPE	size = 112
+	_spawnlpe                       
+
+SPAWNV  	size = 70
+	_spawnv                         
+
+SPAWNVE 	size = 72
+	_spawnve                        
+
+SPAWNVP 	size = 71
+	_spawnvp                        
+
+SPAWNVPE	size = 73
+	_spawnvpe                       
+
+SPRINTF 	size = 126
+	_sprintf                          _vsprintf
+
+SPUSH   	size = 39
+	SPUSH@                          
+
+SSCANF  	size = 133
+	_sscanf                           _vsscanf
+
+STAT    	size = 177
+	_stat                           
+
+STIME   	size = 144
+	_stime                            _time
+
+STKLEN  	size = 2
+	__stklen                        
+
+STPCPY  	size = 52
+	_stpcpy                         
+
+STRCAT  	size = 66
+	_strcat                         
+
+STRCHR  	size = 62
+	_strchr                         
+
+STRCMP  	size = 50
+	_strcmp                         
+
+STRCPY  	size = 41
+	_strcpy                         
+
+STRCSPN 	size = 72
+	_strcspn                        
+
+STRDUP  	size = 68
+	_strdup                         
+
+STRERROR	size = 353
+	__strerror                        _strerror
+
+STRICMP 	size = 67
+	_stricmp                        
+
+STRLEN  	size = 27
+	_strlen                         
+
+STRLWR  	size = 37
+	_strlwr                         
+
+STRNCAT 	size = 87
+	_strncat                        
+
+STRNCMP 	size = 58
+	_strncmp                        
+
+STRNCPY 	size = 51
+	_strncpy                        
+
+STRNICMP	size = 70
+	_strnicmp                       
+
+STRNSET 	size = 55
+	_strnset                        
+
+STRPBRK 	size = 75
+	_strpbrk                        
+
+STRRCHR 	size = 70
+	_strrchr                        
+
+STRREV  	size = 53
+	_strrev                         
+
+STRSET  	size = 39
+	_strset                         
+
+STRSPN  	size = 83
+	_strspn                         
+
+STRSTR  	size = 111
+	_strstr                         
+
+STRTOK  	size = 208
+	_strtok                         
+
+STRTOL  	size = 177
+	_strtol                         
+
+STRTOUL 	size = 235
+	_strtoul                        
+
+STRUPR  	size = 37
+	_strupr                         
+
+SWAB    	size = 31
+	_swab                           
+
+SYSTEM  	size = 319
+	_system                         
+
+TELL    	size = 23
+	_tell                           
+
+TEXTMODE	size = 46
+	_textmode                       
+
+TIMECVT 	size = 859
+	_dostounix                        _unixtodos
+
+TMPFILE 	size = 74
+	_tmpfile                        
+
+TMPNAM  	size = 191
+	__MKNAME                          __tmpnum
+	_tmpnam                         
+
+TOLOWER 	size = 49
+	_tolower                        
+
+TOUPPER 	size = 49
+	_toupper                        
+
+TZSET   	size = 756
+	__ISDST                           __monthDay
+	_daylight                         _timezone
+	_tzname                           _tzset
+
+UMASK   	size = 25
+	_umask                          
+
+UNGETC  	size = 104
+	_ungetc                         
+
+UNLINK  	size = 26
+	_unlink                         
+
+VFPRINTF	size = 32
+	_vfprintf                       
+
+VFSCANF 	size = 38
+	_vfscanf                        
+
+VIDINFO 	size = 70
+	_gettextinfo                    
+
+VPRINTER	size = 1477
+	__VPRINTER                      
+
+VPRINTF 	size = 31
+	_vprintf                        
+
+VRAM    	size = 161
+	__VPTR                            __VRAM
+
+VSCANF  	size = 37
+	_vscanf                         
+
+WHEREXY 	size = 50
+	__wherexy                         _wherex
+	_wherey                         
+
+WILD    	size = 653
+	__wildargv                      
+
+WINDOW  	size = 104
+	_window                         
+
+WRITE   	size = 352
+	_write                          
+
+WRITEA  	size = 72
+	__write                         
+
+XCLOSE  	size = 19
+	__xclose                        
+
+XFCLOSE 	size = 54
+	__xfclose                       
+
+XFFLUSH 	size = 56
+	__xfflush                       
