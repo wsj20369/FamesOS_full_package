@@ -1,0 +1,5 @@
+﻿A simple Embedded Realtime Kernel(Multitasking, Preemptive)
+
+一个简单的嵌入式实时内核(基于优先级的可抢先式多任务调度)
+
+除内核源码之外的其它文件，与FamesOS仓库一起组成一个完整的包
